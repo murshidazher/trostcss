@@ -9,7 +9,7 @@ before_script:
   - npm install -g gulp
 
 script:
-  - npm compile:dist
+  - npm run compile:dist
 
 notifications:
   email: false
