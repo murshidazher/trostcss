@@ -1,0 +1,221 @@
+
+.btn {
+
+  display: inline-block; 
+  outline: none;
+  overflow: hidden;
+  user-select: none;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+
+  padding: 0 var(--btn-padding-horizontal);
+  border-width: var(--btn-border-width);
+  border-style: solid;
+  border-color: var(--gray-50);
+  border-radius: var(--btn-radius);
+  height: var(--btn-height-md);
+  min-width: var(--btn-height-md);
+  font-size: var( --btn-font-size-md);
+  font-weight: var(--btn-font-weight);
+  
+  color: var(--black);
+  background-color: var(--white);
+  transition: all var(--animation-duration-short) ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    background: var(--white-hover);
+  }
+
+  &:active {
+    background: var(--white-active);
+  }
+
+  & svg {
+    width: var(--btn-icon-size-md);
+    height: var(--btn-icon-size-md);
+    fill: currentColor;
+  }
+
+  &.loader::before {
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    width: 1em;
+    height: 1em;
+  }
+
+  &--error {
+    color: var(--white);
+    background: var(--danger);
+    border-color: var(--danger);
+
+    &.button-border {
+      color: var(--danger);
+      background: transparent;
+    }
+
+    &:hover {
+      color: var(--white);
+      background: var(--danger-hover);
+      border-color: var(--danger-hover);
+    }
+
+    &:active {
+      color: var(--white);
+      background: var(--danger-active);
+      border-color: var(--danger-active);
+    }
+
+    &.btn--text {
+      color: var(--danger);
+
+      &:hover,
+      &:focus {
+        color: var(--danger-hover);
+      }
+
+      &:active {
+        color: var(--danger-active);
+      }
+    }
+  }
+
+  &--warning {
+    color: var(--white);
+    background: var(--warning);
+    border-color: var(--warning);
+
+    &.button-border {
+      color: var(--warning);
+      background: transparent;
+    }
+
+    &:hover {
+      color: var(--white);
+      background: var(--warning-hover);
+      border-color: var(--warning-hover);
+    }
+
+    &:active {
+      color: var(--white);
+      background: var(--warning-active);
+      border-color: var(--warning-active);
+    }
+
+    &.btn--text {
+      color: var(--warning);
+
+      &:hover,
+      &:focus {
+        color: var(--warning-hover);
+      }
+
+      &:active {
+        color: var(--warning-active);
+      }
+    }
+  }
+
+
+  &--success {
+    color: var(--white);
+    background: var(--success);
+    border-color: var(--success);
+
+    &.button-border {
+      color: var(--success);
+      background: transparent;
+    }
+
+    &:hover {
+      color: var(--white);
+      background: var(--success-hover);
+      border-color: var(--success-hover);
+    }
+
+    &:active {
+      color: var(--white);
+      background: var(--success-active);
+      border-color: var(--success-active);
+    }
+
+    &.btn--text {
+      color: var(--success);
+
+      &:hover,
+      &:focus {
+        color: var(--success-hover);
+      }
+
+      &:active {
+        color: var(--success-active);
+      }
+    }
+  }
+
+  &--info {
+    color: var(--white);
+    background: var(--info);
+    border-color: var(--info);
+
+    &.button-border {
+      color: var(--info);
+      background: transparent;
+    }
+
+    &:hover {
+      color: var(--white);
+      background: var(--info-hover);
+      border-color: var(--info-hover);
+    }
+
+    &:active {
+      color: var(--white);
+      background: var(--info-active);
+      border-color: var(--info-active);
+    }
+
+    &.btn--text {
+      color: var(--info);
+
+      &:hover,
+      &:focus {
+        color: var(--info-hover);
+      }
+
+      &:active {
+        color: var(--info-active);
+      }
+    }
+  }
+}
+
+
+button:disabled,
+.btn[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: var(--btn-disabled-opacity);
+}
+
+
+/* .btn-container
+.btn
+.btn__icon
+.btn__text */
+
+/* display: inline-block;
+font-weight: normal;
+line-height: 1.25;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+user-select: none;
+border: 1px solid transparent;
+padding: .5rem 1rem;
+font-size: 1rem;
+border-radius: .25rem;
+transition: all 0.2s ease-in-out; */
