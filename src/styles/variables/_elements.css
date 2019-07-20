@@ -1,0 +1,119 @@
+:root {
+
+    /* Buttons */
+
+    /* Base */
+    --btn-base-font-size: 1em;
+    --btn-base-icon-size: 1em;
+    --btn-height: 2.5em;
+    --btn-scale-ratio: .25;
+    --btn-radius: .25em;
+    --btn-line-height: 1.25;
+    --btn-font-weight: 400;
+    --btn-border-width: var(--border-width);
+    --btn-padding-horizontal: 1.25em;
+    --btn-disabled-opacity: 0.55;
+
+    --btn-text-scale-ratio: var(--text-scale-ratio);
+    
+
+    --font-size-xxs: .625rem;
+    --font-size-xs: .75rem;
+    --font-size-sm: .875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-xxl: 1.5rem;
+
+
+    /* (n + 4) / 8*/
+    /* Font */
+    --btn-font-size-xxs: .625rem;
+    --btn-font-size-xs: .75rem;
+    --btn-font-size-sm: .875rem;
+    --btn-font-size-md: 1rem;
+    --btn-font-size-lg: 1.125rem;
+    --btn-font-size-xl: 1.25rem;
+    --btn-font-size-xxl: 1.5rem;
+
+    /* (n + 2) / 4 */
+    /* Icon Size */
+    --btn-icon-size-xxs: .75rem;
+    --btn-icon-size-xs: 1rem;
+    --btn-icon-size-sm: 1.25rem;
+    --btn-icon-size-md: 1.5rem;
+    --btn-icon-size-lg: 1.75rem;
+    --btn-icon-size-xl: 2rem;
+    --btn-icon-size-xxl: 2.25rem;
+
+    /* Spacing */
+   /*  --btn-padding-vertical-xxs: calc((var(--btn-height) - (var(--btn-font-size-xxs)) * 2) / 2);
+    --btn-padding-vertical-xs: calc((var(--btn-height) - (var(--btn-font-size-xs)) * 2) / 2);
+    --btn-padding-vertical-sm: calc((var(--btn-height) - (var(--btn-font-size-sm)) * 2) / 2);
+    --btn-padding-vertical-md: calc((var(--btn-height) - (var(--btn-font-size-md)) * 2) / 2);
+    --btn-padding-vertical-lg: calc((var(--btn-height) - (var(--btn-font-size-lg)) * 2) / 2);
+    --btn-padding-vertical-xl: calc((var(--btn-height) - (var(--btn-font-size-xl)) * 2) / 2);
+    --btn-padding-vertical-xxl: calc((var(--btn-height) - (var(--btn-font-size-xxl)) * 2) / 2); */
+
+    /* Spacing */
+    --btn-padding-vertical-xxs: calc((var(--btn-height-xxs) - var(--btn-font-size-xxs) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-vertical-xs: calc((var(--btn-height-xs) - var(--btn-font-size-xs) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-vertical-sm: calc((var(--btn-height-sm) - var(--btn-font-size-sm) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-vertical-md: calc((var(--btn-height-md) - var(--btn-font-size-md) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-vertical-lg: calc((var(--btn-height-lg) - var(--btn-font-size-lg) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-vertical-xl: calc((var(--btn-height-xl) - var(--btn-font-size-xl) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-vertical-xxl: calc((var(--btn-height-xxl) - var(--btn-font-size-xxl) - (var(--btn-border-width) * 1)) / 2);
+
+    --btn-padding-horizontal-xxs: calc((var(--btn-height-xxs) - var(--btn-font-size-xxs) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-horizontal-xs: calc((var(--btn-height-xs) - var(--btn-font-size-xs) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-horizontal-sm: 0.75em;
+    --btn-padding-horizontal-md: calc((var(--btn-height-md) - var(--btn-font-size-md) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-horizontal-lg: calc((var(--btn-height-lg) - var(--btn-font-size-lg) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-horizontal-xl: calc((var(--btn-height-xl) - var(--btn-font-size-xl) - (var(--btn-border-width) * 1)) / 2);
+    --btn-padding-horizontal-xxl: calc((var(--btn-height-xxl) - var(--btn-font-size-xxl) - (var(--btn-border-width) * 1)) / 2);
+
+    
+    --btn-icon-padding-horizontal-sm: 0.5em;
+    --btn-icon-padding-horizontal-md: 0.438em;
+    --btn-icon-padding-horizontal-xl: 0.438em;
+    --btn-icon-padding-horizontal-xxl: 0.438em;
+
+    /*
+        verticle
+            xxs -
+            xs -
+            sm - 0.563
+            md -
+            lg -
+            xl -
+            xxl -
+    */
+
+
+    --btn-icon-margin: .5em;
+    --btn-icon-padding-xxs: calc((var(--btn-height-xxs) - var(--btn-icon-size-xxs) - (var(--btn-border-width) * 2)) / 2);
+    --btn-icon-padding-xs: calc((var(--btn-height-xs) - var(--btn-icon-size-xs) - (var(--btn-border-width) * 2)) / 2);
+    --btn-icon-padding-sm: calc((var(--btn-height-sm) - var(--btn-icon-size-sm) - (var(--btn-border-width) * 2)) / 2);
+    --btn-icon-padding-md: calc((var(--btn-height-md) - var(--btn-icon-size-md) - (var(--btn-border-width) * 2)) / 2);
+    --btn-icon-padding-lg: calc((var(--btn-height-lg) - var(--btn-icon-size-lg) - (var(--btn-border-width) * 2)) / 2);
+    --btn-icon-padding-xl: calc((var(--btn-height-xl) - var(--btn-icon-size-xl) - (var(--btn-border-width) * 2)) / 2);
+    --btn-icon-padding-xxl: calc((var(--btn-height-xxl) - var(--btn-icon-size-xxl) - (var(--btn-border-width) * 2)) / 2);
+
+
+    --height-xxs: 1.75rem;
+    --height-xs: 2rem;
+    --height-sm: 2.25rem;
+    --height-md: 2.5rem;
+    --height-lg: 2.75rem;
+    --height-xl: 3rem;
+    --height-xxl: 3.25rem;
+
+    /* (n + 6) / 4 */
+    --btn-height-xxs: 1.75rem;
+    --btn-height-xs: 2rem;
+    --btn-height-sm: 2.25rem;
+    --btn-height-md: 2.5rem;
+    --btn-height-lg: 2.75rem;
+    --btn-height-xl: 3rem;
+    --btn-height-xxl: 3.25rem;
+}
