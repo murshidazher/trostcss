@@ -1,0 +1,24 @@
+
+/* Floats */
+
+.flt {
+
+    &--none { 
+        float: none; 
+    }
+
+    &--left {
+        float: left;  
+        display: inline;
+    }
+
+    &--right { 
+        float: right; 
+        display: inline; 
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
