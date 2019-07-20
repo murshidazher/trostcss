@@ -1,0 +1,31 @@
+/* White Spacing
+    - how the white space inside the element is handled
+*/
+
+.whs {
+
+    &--normal {
+        white-space: normal;
+    }
+
+    &--nowrap {
+        white-space: nowrap;
+    }
+
+    &--pre {
+        white-space: pre;
+    }
+
+    &--prewrap {
+        white-space: pre-wrap;
+    }
+
+    &--preline {
+        white-space: pre-line;
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
