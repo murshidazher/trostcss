@@ -1,0 +1,21 @@
+/* table layout */
+.tl {
+
+    &--auto {
+        table-layout: auto;
+    }
+
+    &--fixed {
+        table-layout: fixed;
+    }
+
+    &--inherit {
+        table-layout: inherit;
+    }
+}
+
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
