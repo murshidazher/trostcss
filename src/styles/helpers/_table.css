@@ -1,0 +1,21 @@
+.tbl {
+
+    &--striped {
+
+        &-white:nth-child(even) {
+            background-color: var(--white-darkest);
+        }
+        
+        &-silver:nth-child(even) {
+            background-color: var(--silver-light);
+        }
+
+        &-gray:nth-child(even) {
+            background-color: var(--gray-light);
+        }
+
+        &-black:nth-child(even) {
+            background-color: var(--black-light);
+        }
+    }
+}
