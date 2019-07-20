@@ -1,3 +1,125 @@
-.c {
-    color: aqua;
-}
+/*
+    To Complete
+    -- space ex height
+        -- max width
+        -- width -> done
+        -- max height
+        -- height --> done
+        -- display
+        -- shadow
+        -- indent
+        -- kerning
+        -- white_spacing
+        -- opacity
+        -- z-index
+        -- sidebearing
+        -- character width
+        -- select
+        -- border collapse
+        -- colors
+        -- link
+         -- border
+         -- bdr radius / style / width
+         --list style
+         -- pointers
+         -- hanging punctuations
+         -- table layout
+         _horizontal-rule
+        
+
+
+
+       
+        -- outlines
+        -- pointer events
+
+        -- hover
+        -- line
+       
+        
+        
+        -- table based 12 column grid
+        -- float based 12 column grid
+        -- flex based 12 colum grid
+        -- grid based 12 column grid 
+        
+
+        --- v1.2 ---
+        -- tunderline
+        -- border spacing
+        -- images
+        -- grid based with a fallback to flex then to float
+*/
+
+/* Helper Styles of Achelois*/
+@import "_clearfix.css";
+
+/* Typography Helpers */
+@import "_font-stack.css";
+@import "_typescale.css";
+@import "_vertical-align.css";
+@import "_spacing.css";
+@import "_line-height.css";
+@import "_letter-spacing.css";
+@import "_word-spacing.css";
+
+@import "_font-weight.css";
+@import "_font-style.css";
+@import "_text-align.css";
+@import "_text-transform.css";
+@import "_text-decoration.css";
+@import "_white-space.css";
+@import "_character-width.css";
+@import "_font-settings.css";
+@import "_side-bearing.css";
+@import "_ampersands.css";
+@import "_text-indent.css";
+@import "_hyphens.css";
+@import "_word-break.css";
+@import "_text-overflow.css";
+@import "_overflow-wrap.css";
+@import "_user-select.css";
+@import "_hanging-punctuation.css";
+@import "_horizontal-rule.css";
+@import "_text-underline.css";
+@import "_writing-mode.css";
+
+/* Layout helpers */
+@import "_display.css";
+@import "_position.css";
+@import "_max-width.css";
+@import "_width.css";
+@import "_height.css";
+@import "_max-height.css";
+@import "_flexbox.css";
+@import "_float.css";
+@import "_rotate.css";
+
+
+/* Borders */
+@import "_border.css";
+@import "_border-radius.css";
+@import "_border-style.css";
+@import "_border-widths.css";
+
+/* List Style */
+@import "_list.css";
+@import "_list-style.css";
+@import "_list-position.css";
+@import "_list-nested.css";
+
+/* Pointers */
+@import "_cursor.css";
+
+/* Shadows */
+@import "_box-shadow.css";
+
+
+
+/* Table Layout */
+@import "_table-layout.css";
+@import "_border-collapse.css";
+
+/* Filers */
+@import "_opacity.css";
+@import "_z-index.css";
