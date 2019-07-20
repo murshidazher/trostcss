@@ -1,0 +1,154 @@
+/*
+
+    WORD SPACING
+        - Spacing between words
+
+    Base:
+        wos : word space
+
+    Media Query Extensions : 
+        -sm : small
+        -md : medium
+        -lg : large
+        -xl : extra large
+*/
+
+.wos {
+    word-spacing: .1em;
+
+    &--compact {
+        word-spacing:  -.05em;
+    }
+
+    &--narrow {
+        word-spacing:  -.01em;
+    }
+
+    &--breathe {
+        word-spacing: .03em;
+    }
+
+    &--heave {
+        word-spacing: .06em;
+    }
+
+    &--stretch {
+        word-spacing:  .15em;
+    }
+}
+
+@mixin atSmall {
+    .wos {
+
+        &-sm {
+            word-spacing: .1em;
+        }
+        
+        &--tight-sm {
+            word-spacing:  -.05em;
+        }
+    
+        &--compact-sm {
+            word-spacing:  -.01em;
+        }
+    
+        &--breathe-sm {
+            word-spacing: .03em;
+        }
+    
+        &--heave-sm {
+            word-spacing: .06em;
+        }
+    
+        &--stretch-sm {
+            word-spacing:  .15em;
+        }
+    }
+}
+
+@mixin atMedium {
+    .wos {
+
+        &-md {
+            word-spacing: .1em;
+        }
+        
+        &--tight-md {
+            word-spacing:  -.05em;
+        }
+    
+        &--compact-md {
+            word-spacing:  -.01em;
+        }
+    
+        &--breathe-md {
+            word-spacing: .03em;
+        }
+    
+        &--heave-md {
+            word-spacing: .06em;
+        }
+    
+        &--stretch-md {
+            word-spacing:  .15em;
+        }
+    }
+}
+
+@mixin atLarge {
+    .wos {
+
+        &-lg {
+            word-spacing: .1em;
+        }
+        
+        &--tight-lg {
+            word-spacing:  -.05em;
+        }
+    
+        &--compact-lg {
+            word-spacing:  -.01em;
+        }
+    
+        &--breathe-lg {
+            word-spacing: .03em;
+        }
+    
+        &--heave-lg {
+            word-spacing: .06em;
+        }
+    
+        &--stretch-lg {
+            word-spacing:  .15em;
+        }
+    }
+}
+
+@mixin atExLarge {
+    .wos {
+
+        &-xl {
+            word-spacing: .1em;
+        }
+        
+        &--tight-xl {
+            word-spacing:  -.05em;
+        }
+    
+        &--compact-xl {
+            word-spacing:  -.01em;
+        }
+    
+        &--breathe-xl {
+            word-spacing: .03em;
+        }
+    
+        &--heave-xl {
+            word-spacing: .06em;
+        }
+    
+        &--stretch-xl {
+            word-spacing:  .15em;
+        }
+    }
+}
