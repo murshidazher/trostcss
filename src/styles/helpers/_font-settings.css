@@ -1,0 +1,30 @@
+/*
+    FONT SETIINGS
+    KERNING
+        - Adjust the spacing between the two characters (i.e use for thightly spaced text)
+
+    LIGATURES
+        - Binding something tightly (i.e use for thightly spaced text)
+*/
+
+.fs {
+    &--kern {
+        font-feature-settings: 'kern';
+        /* for IE */
+        font-kerning: normal;
+    }
+
+    &--no-kern {
+        font-kerning: none;
+    }
+    
+    &--liga {
+        font-variant-ligatures: common-ligatures;
+        font-feature-settings: 'liga';
+    }
+    
+    &--no-liga {
+        font-variant-ligatures: none;
+    }
+}
+
