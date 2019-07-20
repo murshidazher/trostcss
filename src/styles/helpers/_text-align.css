@@ -1,0 +1,126 @@
+/*
+    TEXT STYLE
+        - alignment of text
+
+    Base:
+        ta : text alignemnt
+
+    Media Query Extensions : 
+        -xl : small
+        -md : medium
+        -lg : large
+        -xl : extra large
+*/
+
+.ta {
+    &--right {
+        text-align: right;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--justify {
+        text-align: justify;
+    }
+
+    &--middle {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin atSmall {
+
+    .ta {
+        &--right-sm {
+            text-align: right;
+        }
+    
+        &--left-sm {
+            text-align: left;
+        }
+    
+        &--center-sm {
+            text-align: center;
+        }
+    
+        &--justify-sm {
+            text-align: justify;
+        }
+    }
+
+}
+
+@mixin atMedium {
+
+    .ta {
+        &--right-md {
+            text-align: right;
+        }
+    
+        &--left-md {
+            text-align: left;
+        }
+    
+        &--center-md {
+            text-align: center;
+        }
+    
+        &--justify-md {
+            text-align: justify;
+        }
+    }
+    
+}
+
+@mixin atLarge {
+
+    .ta {
+        &--right-lg {
+            text-align: right;
+        }
+    
+        &--left-lg {
+            text-align: left;
+        }
+    
+        &--center-lg {
+            text-align: center;
+        }
+    
+        &--justify-lg {
+            text-align: justify;
+        }
+    }
+    
+}
+
+@mixin atExLarge {
+
+    .ta {
+        &--right-xl {
+            text-align: right;
+        }
+    
+        &--left-xl {
+            text-align: left;
+        }
+    
+        &--center-xl {
+            text-align: center;
+        }
+    
+        &--justify-xl {
+            text-align: justify;
+        }
+    }
+    
+}
