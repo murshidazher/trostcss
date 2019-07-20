@@ -1,0 +1,80 @@
+/* Horizontal Rule */
+
+.hr {
+
+    /* border: 0;
+    height: 0;
+    border-top: .1rem solid rgba(var(--gray-dark), 0.1);
+    border-bottom: .1rem solid rgba(var(--gray-dark), 0.2); */
+
+    /* border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+
+    border: 0;
+height: 0;
+border-top: 1px solid rgba(0, 0, 0, 0.9);
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    &--dotted {
+        border: 0;
+        border-bottom: .1rem dotted var(--gray-dark);
+    }
+
+    &--dashed {
+        border: 0;
+        border-bottom: .1rem dashed var(--gray-dark);
+    }
+
+    &--single {
+        overflow: visible;
+        /* For IE */
+        padding: 0;
+        border: none;
+        border-top: .1rem solid var(--black);
+        color: black;
+        text-align: center;
+        height: 12px;
+
+        &[data-line]:after {
+            content: attr(data-line);
+            display: inline-block;
+            position: relative;
+            top: -1em;
+            font-size: .8em;
+            letter-spacing: .06em;
+            padding: 0 0.25em;
+            background: var(--white);
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &--double {
+        overflow: visible;
+        /* For IE */
+        padding: 0;
+        border: none;
+        border-top: medium double var(--gray-dark);
+        color: var(--black);
+        text-align: center;
+        height: 12px;
+
+        &[data-line]:after {
+            content: attr(data-line);
+            display: inline-block;
+            position: relative;
+            top: -1.1em;
+            font-size: .8em;
+            letter-spacing: .06em;
+            padding: 0 0.5em;
+            background: var(--white);
+            margin-bottom: 2.4rem;
+        }
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
