@@ -1,7 +1,5 @@
 /* Normalisation and Base styles files. */
-
-.a {
-  color: aqua;
-  background-color: blue;
-  font-size: 2px;
-}
+@import "_reset.css";
+@import "_root.css";
+@import "_white-space.css";
+@import "_theme.css";
