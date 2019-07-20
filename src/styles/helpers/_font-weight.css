@@ -1,0 +1,245 @@
+/*
+    FONT WEIGHT
+        - weight of fonts
+
+    Base:
+        fw : font weight
+*/
+
+.fw {
+
+    &9,
+    &--bolder {
+        font-weight: 900;
+    }
+
+    &8 {
+        font-weight: 800;
+    }
+
+    &7,
+    &--bold {
+        font-weight: 700;
+    }
+
+    &6 {
+        font-weight: 600;
+    }
+
+    &5,
+    &--semi-bold {
+        font-weight: 500;
+    }
+
+    &4,
+    &--regular {
+        font-weight: 400;
+    }
+
+    &3,
+    &--light {
+        font-weight: 300;
+    }
+
+    &2 {
+        font-weight: 200;
+    }
+
+    &1,
+    &--thin {
+        font-weight: 100;
+    }
+    
+}
+
+@mixin atSmall {
+
+    .fw {
+
+        &9-sm,
+        &--bolder-sm {
+            font-weight: 900;
+        }
+    
+        &8-sm {
+            font-weight: 800;
+        }
+    
+        &7-sm,
+        &--bold-sm {
+            font-weight: 700;
+        }
+    
+        &6-sm {
+            font-weight: 600;
+        }
+    
+        &5-sm,
+        &--semi-bold-sm {
+            font-weight: 500;
+        }
+    
+        &4-sm,
+        &--regular-sm {
+            font-weight: 400;
+        }
+    
+        &3-sm,
+        &--light-sm {
+            font-weight: 300;
+        }
+    
+        &2-sm {
+            font-weight: 200;
+        }
+    
+        &1-sm,
+        &--thin-sm {
+            font-weight: 100;
+        }
+    }
+
+}
+
+@mixin atMedium {
+
+    .fw {
+
+        &9-md,
+        &--bolder-md {
+            font-weight: 900;
+        }
+    
+        &8-md {
+            font-weight: 800;
+        }
+    
+        &7-md,
+        &--bold-md {
+            font-weight: 700;
+        }
+    
+        &6-md {
+            font-weight: 600;
+        }
+    
+        &5-md,
+        &--semi-bold-md {
+            font-weight: 500;
+        }
+    
+        &4-md,
+        &--regular-md {
+            font-weight: 400;
+        }
+    
+        &3-md,
+        &--light-md {
+            font-weight: 300;
+        }
+    
+        &2-md {
+            font-weight: 200;
+        }
+    
+        &1-md,
+        &--thin-md {
+            font-weight: 100;
+        }
+    }
+    
+}
+
+@mixin atLarge {
+    .fw {
+
+        &9-lg,
+        &--bolder-lg {
+            font-weight: 900;
+        }
+    
+        &8-lg {
+            font-weight: 800;
+        }
+    
+        &7-lg,
+        &--bold-lg {
+            font-weight: 700;
+        }
+    
+        &6-lg {
+            font-weight: 600;
+        }
+    
+        &5-lg,
+        &--semi-bold-lg {
+            font-weight: 500;
+        }
+    
+        &4-lg,
+        &--regular-lg {
+            font-weight: 400;
+        }
+    
+        &3-lg,
+        &--light-lg {
+            font-weight: 300;
+        }
+    
+        &2-lg {
+            font-weight: 200;
+        }
+    
+        &1-lg,
+        &--thin-lg {
+            font-weight: 100;
+        }
+    }
+}
+
+@mixin atExLarge {
+    .fw {
+
+        &9-xl,
+        &--bolder-xl {
+            font-weight: 900;
+        }
+    
+        &8-xl {
+            font-weight: 800;
+        }
+    
+        &7-xl,
+        &--bold-xl {
+            font-weight: 700;
+        }
+    
+        &6-xl {
+            font-weight: 600;
+        }
+    
+        &5-xl,
+        &--semi-bold-xl {
+            font-weight: 500;
+        }
+    
+        &4-xl,
+        &--regular-xl {
+            font-weight: 400;
+        }
+    
+        &3-xl,
+        &--light-xl {
+            font-weight: 300;
+        }
+    
+        &2-xl {
+            font-weight: 200;
+        }
+    
+        &1-xl,
+        &--thin-xl {
+            font-weight: 100;
+        }
+    }
+}
