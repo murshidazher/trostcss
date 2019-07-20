@@ -1,3 +1,5 @@
-.e {
-    color: aqua;
-}
+/* Collection of CSS variables for trostcss */
+@import "_colors.css";
+@import "_durations.css";
+@import "_units.css";
+@import "_elements.css";
