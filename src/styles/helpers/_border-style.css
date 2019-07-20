@@ -1,0 +1,25 @@
+/* Border Styles */
+
+.bdr {
+    &--none {
+        border-style: none;
+    }
+
+    &--solid {
+        border-style: solid;
+    }
+
+    &--dotted {
+        border-style: dottd;
+    }
+
+    &--dashed {
+        border-style: dashed;
+    }
+}
+
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
