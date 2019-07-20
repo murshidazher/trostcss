@@ -33,9 +33,11 @@ gulp.task('minify:trost-dist', gulp.series('styles', function() {
 
 
 gulp.task('minify:trost-dev', gulp.series('styles:trost', function() {
+
     var cssfile = gulp.src(['./trost/assets/styles/trost.css', '!./trost/assets/styles/*.min.css']);
-            
+     
     if(isDebug) {
+
         cssfile = cssfile.pipe(cssnano()).pipe(rename({ suffix: '.min' })); 
     }
     
