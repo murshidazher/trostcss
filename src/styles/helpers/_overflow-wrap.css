@@ -1,0 +1,7 @@
+.ofw {
+
+    &--auto {
+        overflow: auto;
+    }
+
+}
