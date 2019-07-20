@@ -1,0 +1,141 @@
+:root {
+    /* fonts face zero for different */
+    --character-mono-zero: 1;
+    --character-sans-zero: 0.8986;
+    --character-serif-zero: 0.7257;
+}
+
+.chw {
+
+    &--mono {
+
+        &-narrow {
+            width: calc(48ch * var(--character-mono-zero));
+        }
+
+        &-wide {
+            width: calc(72ch * var(--character-mono-zero));
+        }
+
+        &-ideal {
+            width: calc(64ch * var(--character-mono-zero));
+        }
+
+        &-wider {
+            width: calc(80ch * var(--character-mono-zero));
+        }
+
+
+        &-16 {
+            width: calc(16ch * var(--character-mono-zero));
+        }
+
+        &-24 {
+            width: calc(24ch * var(--character-mono-zero));
+        }
+
+        &-32 {
+            width: calc(32ch * var(--character-mono-zero));
+        }
+
+        &-48 {
+            width: calc(48ch * var(--character-mono-zero));
+        }
+
+        &-64 {
+            width: calc(64ch * var(--character-mono-zero));
+        }
+
+        &-80 {
+            width: calc(80ch * var(--character-mono-zero));
+        }
+    }
+
+    &--sans {
+
+        &-narrow {
+            width: calc(48ch * var(--character-sans-zero));
+        }
+
+        &-wide {
+            width: calc(72ch * var(--character-sans-zero));
+        }
+
+        &-ideal {
+            width: calc(64ch * var(--character-sans-zero));
+        }
+
+        &-wider {
+            width: calc(80ch * var(--character-sans-zero));
+        }
+
+
+        &-16 {
+            width: calc(16ch * var(--character-sans-zero));
+        }
+
+        &-24 {
+            width: calc(24ch * var(--character-sans-zero));
+        }
+
+        &-32 {
+            width: calc(32ch * var(--character-sans-zero));
+        }
+
+        &-48 {
+            width: calc(48ch * var(--character-sans-zero));
+        }
+
+        &-64 {
+            width: calc(64ch * var(--character-sans-zero));
+        }
+
+        &-80 {
+            width: calc(80ch * var(--character-sans-zero));
+        }
+    }
+
+    &--serif {
+
+        &-narrow {
+            width: calc(48ch * var(--character-serif-zero));
+        }
+
+        &-wide {
+            width: calc(72ch * var(--character-serif-zero));
+        }
+
+        &-ideal {
+            width: calc(64ch * var(--character-serif-zero));
+        }
+
+        &-wider {
+            width: calc(80ch * var(--character-serif-zero));
+        }
+
+        &-16 {
+            width: calc(16ch * var(--character-serif-zero));
+        }
+
+        &-24 {
+            width: calc(24ch * var(--character-serif-zero));
+        }
+
+        &-32 {
+            width: calc(32ch * var(--character-serif-zero));
+        }
+
+        &-48 {
+            width: calc(48ch * var(--character-serif-zero));
+        }
+
+        &-64 {
+            width: calc(64ch * var(--character-serif-zero));
+        }
+
+        &-80 {
+            width: calc(80ch * var(--character-serif-zero));
+        }
+    }
+    
+}
