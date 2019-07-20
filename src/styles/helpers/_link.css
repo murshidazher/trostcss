@@ -1,0 +1,33 @@
+/* 
+Link Styles
+
+*/
+
+.link {
+
+    text-decoration: none;
+    transition: color $link-transition-short ease-in;
+
+    &:focus   {
+        transition: color $link-transition-short ease-in;
+        outline: $link-transition-short solid currentColor;
+    }
+
+    &:hover {
+        transition: color $link-transition-short ease-in;
+    }
+    
+    &:active  {
+        transition: color $link-transition-short ease-in;
+    }
+
+    &:link,
+    &:visited {
+        transition: color $link-transition-short ease-in;
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
