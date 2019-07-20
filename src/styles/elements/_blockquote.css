@@ -1,0 +1,12 @@
+/* Block quote styles */
+
+.bq {
+    display: block;
+    hyphens: manual; /* if there is an opportunity */
+    margin: 0 8rem 0 4.8rem;
+    border-left: 3px solid rgba(0,0,0,.84);;
+    padding-left: 1.5rem;
+    word-spacing: .02em;
+    letter-spacing: .02em;
+    max-width: 80ch; 
+}
