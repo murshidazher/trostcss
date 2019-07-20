@@ -1,0 +1,23 @@
+/*
+    Hyphens
+*/
+
+.hyp {
+    &--none {
+        hyphens: none;
+    }
+
+    &--manual {
+        hyphens: manual;
+    }
+
+    &--auto {
+        hyphens: auto;
+    }
+}
+
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
