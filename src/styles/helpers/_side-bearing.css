@@ -1,0 +1,44 @@
+/*
+    Side Bearing
+        - side-bearing is the space left and right of a glyphs
+    
+    (i.e) side bearing is adjusted with the use of margin-left hence beware of the usage
+
+    ranges from 1 - 7 [-0.02em ~ 0.1em]
+
+*/
+
+.sb {
+
+    &1 {
+        margin-left: -0.1em;
+    }
+
+    &2 {
+        margin-left: -0.08em;
+    }
+
+    &3 {
+        margin-left: -0.075em;
+    }
+
+    &4 {
+        margin-left: -0.06em;
+    }
+
+    &5 {
+        margin-left: -0.05em;
+    }
+
+    &6 {
+        margin-left: -0.04em;
+    }
+
+    &7 {
+        margin-left: -0.02em;
+    }
+
+    &--none {
+        margin-left: 0;
+    }
+}
