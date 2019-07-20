@@ -1,0 +1,70 @@
+/* Border Radius */
+
+.bdr-r {
+    &0 {
+        border-radius: 0;
+    }
+
+    &1 {
+        border-radius: .25em;
+    }
+
+    &2 {
+        border-radius: .5em;
+    }
+
+    &3 {
+        border-radius: 1em;
+    }
+
+    &4 {
+        border-radius: 2em;
+    }
+
+    &5 {
+        border-radius: 1.5em;
+    }
+
+    &6 {
+        border-radius: 8em;
+    }
+
+    &7 {
+        border-radius: .125em;
+    }
+
+
+    &--circle {
+        border-radius: 50%;
+    }
+
+    &--pill {
+        border-radius: 500px;
+    }
+
+    &--t {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &--r {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    &--b {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &--l {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
