@@ -1,0 +1,96 @@
+/*
+    By default it is outline 
+    ad modifier --1 to make it inset
+*/
+
+.box-sdw {
+
+    &--none {
+        box-shadow: none
+    }
+
+    &--a {
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.4);
+
+        &--i {
+            box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.4);
+        }
+    }
+
+    &--a-lgt {
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.15);
+
+        &--i {
+            box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.15);
+        }
+    }
+
+    &--tl {
+        box-shadow: -4px -4px 6px 0px rgba(0,0,0,0.4);
+
+        &--i {
+            box-shadow: inset -4px -4px 6px 0px rgba(0,0,0,0.4);
+        }
+    }
+
+    &--tl-lgt {
+        box-shadow: -4px -4px 3px 0px rgba(0,0,0,0.15);
+
+        &--i {
+            box-shadow: inset -4px -4px 3px 0px rgba(0,0,0,0.15);
+        }
+    }
+
+    &--tr {
+        box-shadow: 4px -4px 6px 0px rgba(0,0,0,0.4);
+
+        &--i {
+            box-shadow: inset 4px -4px 6px 0px rgba(0,0,0,0.4);
+        }
+    }
+
+    &--tr-lgt {
+        box-shadow: 4px -4px 3px 0px rgba(0,0,0,0.15);
+
+        &--i {
+            box-shadow: inset 4px -4px 3px 0px rgba(0,0,0,0.15);
+        }
+    }
+
+    &--bl {
+        box-shadow: -4px 4px 6px 0px rgba(0,0,0,0.4);
+
+        &--i {
+            box-shadow: inset -4px 4px 6px 0px rgba(0,0,0,0.4);
+        }
+    }
+
+    &--bl-lgt {
+        box-shadow: -4px 4px 3px 0px rgba(0,0,0,0.15);
+
+        &--i {
+            box-shadow: inset -4px 4px 3px 0px rgba(0,0,0,0.15);
+        }
+    }
+
+    &--br {
+        box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+
+        &--i {
+            box-shadow: inset 4px 4px 6px 0px rgba(0,0,0,0.4);
+        }
+    }
+
+    &--br-lgt {
+        box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.15);
+
+        &--i {
+            box-shadow: inset 4px 4px 3px 0px rgba(0,0,0,0.15);
+        }
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
