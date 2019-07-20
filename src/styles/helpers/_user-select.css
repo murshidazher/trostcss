@@ -1,0 +1,18 @@
+/*
+    Text Selection
+*/
+
+.uslt {
+
+    &--all {
+        user-select: all; 
+    }
+
+    &--normal {
+        user-select: text; 
+    }
+
+    &--disable {
+        user-select: none; 
+    }
+}
