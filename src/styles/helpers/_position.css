@@ -1,0 +1,30 @@
+/* All postion elements */
+
+.pos {
+    &--fixed {
+        position: fixed;
+    }
+
+    &--absolute {
+        position: absolute;
+    }
+
+    &--static {
+        position: static;
+    }
+
+    &--relative {
+        position: relative;
+    }
+
+    &--sticky {
+        position: sticky;
+    }
+}
+
+/* add  all the media query classes */
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
