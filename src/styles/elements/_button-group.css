@@ -1,0 +1,47 @@
+.btn-group {
+  display: inline-block;
+  /* flex fallback */
+  display: inline-flex;
+
+  & > *{
+    position: relative;
+    display: inline-block; /* flex fallback */
+    flex: 0 0 auto;
+
+    &:first-child:not(:only-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    /* Remove Margin and Adjust magin left to display as single border*/
+    &:not(:first-child):not(:last-child) {
+      margin-left: -.08em;
+      border-radius: 0;
+      /* 1 */
+     
+    }
+
+    &:last-child:not(:only-child) {
+      margin-left: -.06em;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:only-child {
+
+      :hover,
+      :focus,
+      :active {
+        z-index: 1;
+      }
+    }
+  }
+
+  &--block {
+    width: 100%;
+
+    & > .btn {
+      flex: 1 1 auto;
+    }
+  }
+}
