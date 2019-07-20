@@ -1,0 +1,659 @@
+/* One dimension */
+/* Gutter */
+:root {
+    --grid-gutter-sm: 0.375em;
+    /* 6px */
+    --grid-gutter-md: 0.75em;
+    /* 12px */
+    --grid-gutter-lg: 1.5em;
+    /* 24px */
+}
+
+
+nav {
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba(255, 0, 0, 0.8);
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+    &::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(255, 0, 0, 0.4);
+    }
+}
+
+.container {}
+
+
+.content {
+    /* margin: auto;
+     max-width: 74em;
+     width: 88%; */
+}
+
+
+.col {
+
+    &--fluid {
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    &--align {
+
+        &-start {
+            align-self: flex-start;
+        }
+
+        &-stretch {
+            align-self: stretch;
+        }
+
+        &-end {
+            align-self: flex-end;
+        }
+
+        &-center {
+            align-self: center;
+        }
+    }
+
+    /* Order by first and last */
+    &--order {
+
+        &-first {
+            -webkit-box-ordinal-group: 0;
+            order: -1;
+        }
+
+        &-last {
+            -webkit-box-ordinal-group: 13;
+            order: 12;
+        }
+
+        /* Number Based Ordering */
+        @for $i from 1 to 12 {
+            .col--order-$i {
+                order: $i;
+            }
+        }
+    }
+}
+
+
+.row {
+
+    /* fallback for browsers that doesn't support grid */
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    /* margin: 0 var(--grid-gutter-m) 0 0; */
+    /* margin: -var(--grid-gutter-m) 0 0 -var(--grid-gutter-m); */
+
+    & [class*='col-'] {
+        display: block;
+    }
+
+    /* for fluid container */
+    &--fluid {
+        display: flex;
+        overflow: auto;
+    }
+
+    &--wrap {
+        flex-wrap: wrap;
+    }
+
+
+    @for $i from 1 to 12 {
+        .col-$i {
+            flex-basis: calc($i / 12 * 100%);
+            max-width: calc($i / 12 * 100%);
+        }
+    }
+
+    /* Offsets */
+    @for $i from 1 to 12 {
+        .col-$i {
+            &--offset {
+                margin-left: calc($i / 12 * 100%);
+                margin-right: calc(-$i / 12 * 100%);
+            }
+        }
+    }
+
+    /* Responsive columns */
+    @for $i from 1 to 4 {
+        .col-$i {
+            &--res {
+                flex-basis: calc($i / 4 * 100%);
+                max-width: calc($i / 4 * 100%);
+            }
+        }
+    }
+
+    @for $i from 5 to 12 {
+        .col-$i {
+            &--res {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    @mixin atSmall {
+
+        @for $i from 1 to 12 {
+            .col-$i {
+                &-sm {
+                    flex-basis: calc($i / 12 * 100%);
+                    max-width: calc($i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Offsets */
+        @for $i from 1 to 12 {
+            .col-$i {
+                &--offset-sm {
+                    margin-left: calc($i / 12 * 100%);
+                    margin-right: calc(-$i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Responsive columns */
+        @for $i from 1 to 4 {
+            .col-$i {
+                &--res {
+                    flex-basis: calc($i / 4 * 100%);
+                    max-width: calc($i / 4 * 100%);
+                }
+            }
+        }
+
+        @for $i from 5 to 12 {
+            .col-$i {
+                &--res {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+
+
+    @mixin atMedium {
+
+        @for $i from 1 to 12 {
+            .col-$i {
+                &-md {
+                    flex-basis: calc($i / 12 * 100%);
+                    max-width: calc($i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Offsets */
+        @for $i from 1 to 12 {
+            .col-$i {
+                &--offset-md {
+                    margin-left: calc($i / 12 * 100%);
+                    margin-right: calc(-$i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Responsive columns */
+        @for $i from 1 to 8 {
+            .col-$i {
+                &--res {
+                    flex-basis: calc($i / 8 * 100%);
+                    max-width: calc($i / 8 * 100%);
+                }
+            }
+        }
+
+        @for $i from 9 to 12 {
+            .col-$i {
+                &--res {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    @mixin atLarge {
+
+        @for $i from 1 to 12 {
+            .col-$i {
+                &-lg {
+                    flex-basis: calc($i / 12 * 100%);
+                    max-width: calc($i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Offsets */
+        @for $i from 1 to 12 {
+            .col-$i {
+                &--offset-lg {
+                    margin-left: calc($i / 12 * 100%);
+                    margin-right: calc(-$i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Responsive columns */
+        @for $i from 1 to 12 {
+            .col-$i {
+                &--res {
+                    flex-basis: calc($i / 12 * 100%);
+                    max-width: calc($i / 12 * 100%);
+                }
+            }
+        }
+    }
+
+    @mixin atExLarge {
+
+        @for $i from 1 to 12 {
+            .col-$i {
+                &-xl {
+                    flex-basis: calc($i / 12 * 100%);
+                    max-width: calc($i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Offsets */
+        @for $i from 1 to 12 {
+            .col-$i {
+                &--offset-xl {
+                    margin-left: calc($i / 12 * 100%);
+                    margin-right: calc(-$i / 12 * 100%);
+                }
+            }
+        }
+
+        /* Responsive columns */
+        @for $i from 1 to 12 {
+            .col-$i {
+                &--res {
+                    flex-basis: calc($i / 12 * 100%);
+                    max-width: calc($i / 12 * 100%);
+                }
+            }
+        }
+    }
+
+    /* if browser supports grid */
+    @supports (display: grid) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+
+
+
+        &--fluid {
+            display: flex;
+        }
+
+        &--flow-x {
+            grid-auto-flow: column;
+        }
+
+        & [class*="col-"],
+        & [class^='col-'] {
+            margin: 0;
+            max-width: 100%;
+        }
+
+        /* Gutters */
+        &--no-gap {
+            grid-gap: 0;
+        }
+
+        &--no-col-gap {
+            grid-column-gap: 0;
+        }
+
+        &--no-row-gap {
+            grid-row-gap: 0;
+        }
+
+        &--gap-sm {
+            grid-gap: var(--grid-gutter-sm);
+        }
+
+        &--gap-col-sm {
+            grid-column-gap: var(--grid-gutter-sm);
+        }
+
+        &--gap-row-sm {
+            grid-row-gap: var(--grid-gutter-sm);
+        }
+
+        &--gap-md {
+            grid-gap: var(--grid-gutter-md);
+        }
+
+        &--gap-col-md {
+            grid-column-gap: var(--grid-gutter-md);
+        }
+
+        &--gap-row-md {
+            grid-row-gap: var(--grid-gutter-md);
+        }
+
+        &--gap-lg {
+            grid-gap: var(--grid-gutter-lg);
+        }
+
+        &--gap-col-lg {
+            grid-column-gap: var(--grid-gutter-lg);
+        }
+
+        &--gap-row-lg {
+            grid-row-gap: var(--grid-gutter-lg);
+        }
+
+        /* spacing alignment */
+        &--space {
+            &-between {
+                justify-content: space-between;
+            }
+
+            &-around {
+                justify-content: space-around;
+            }
+
+            &-evenly {
+                justify-content: space-evenly;
+            }
+        }
+
+        @for $i from 1 to 12 {
+            .col-$i {
+                grid-column-start: span $i;
+                grid-column-end: span $i;
+            }
+        }
+
+        /* Offsets */
+        @for $i from 1 to 12 {
+            .col-$i {
+                &--offset {
+                    margin-left: calc(($i + ( $i * 0.2)) / 12 * 100%);
+                    /* margin-right: calc((-$i - 0.5) / 12 * 100%); */
+                }
+            }
+        }
+
+        /* Responsive columns */
+        @for $i from 1 to 4 {
+            .col-$i {
+                &--res {
+                    grid-column-start: span $i;
+                    grid-column-end: span $i;
+                }
+            }
+        }
+
+        @for $i from 5 to 12 {
+            .col-$i {
+                &--res {
+                    grid-column-start: span 12;
+                    grid-column-end: span 12;
+                }
+            }
+        }
+
+        @mixin atSmall {
+
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &-sm {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+
+            /* Offsets */
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &--offset-sm {
+                        margin-left: calc($i / 12 * 100%);
+                        margin-right: calc(-$i / 12 * 100%);
+                    }
+                }
+            }
+
+            /* Responsive columns */
+            @for $i from 1 to 4 {
+                .col-$i {
+                    &--res {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+
+            @for $i from 5 to 12 {
+                .col-$i {
+                    &--res {
+                        grid-column-start: span 12;
+                        grid-column-end: span 12;
+                    }
+                }
+            }
+        }
+
+
+        @mixin atMedium {
+
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &-md {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+
+            /* Offsets */
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &--offset-md {
+                        margin-left: calc($i / 12 * 100%);
+                        margin-right: calc(-$i / 12 * 100%);
+                    }
+                }
+            }
+
+            /* Responsive columns */
+            @for $i from 1 to 8 {
+                .col-$i {
+                    &--res {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+
+            @for $i from 9 to 12 {
+                .col-$i {
+                    &--res {
+                        grid-column-start: span 12;
+                        grid-column-end: span 12;
+                    }
+                }
+            }
+        }
+
+        @mixin atLarge {
+
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &-lg {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+
+            /* Offsets */
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &--offset-lg {
+                        margin-left: calc($i / 12 * 100%);
+                        margin-right: calc(-$i / 12 * 100%);
+                    }
+                }
+            }
+
+            /* Responsive columns */
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &--res {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+        }
+
+        @mixin atExLarge {
+
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &-xl {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+
+            /* Offsets */
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &--offset-xl {
+                        margin-left: calc($i / 12 * 100%);
+                        margin-right: calc(-$i / 12 * 100%);
+                    }
+                }
+            }
+
+            /* Responsive columns */
+            @for $i from 1 to 12 {
+                .col-$i {
+                    &--res {
+                        grid-column-start: span $i;
+                        grid-column-end: span $i;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Extras */
+
+    /* vertical alignment */
+    &--align {
+
+        &-top {
+            align-items: start;
+        }
+
+        &-center {
+            align-items: center;
+        }
+
+        &-bottom {
+            align-items: end;
+        }
+
+    }
+
+    /* horizontal alignment */
+    &--justify {
+        &-left {
+            justify-content: flex-start;
+        }
+
+        &-middle {
+            align-items: center;
+        }
+
+        &-right {
+            align-items: flex-end;
+        }
+    }
+}
+
+/* Test divs */
+.block-gray {
+    background-color: gray;
+    min-height: 16px;
+    text-align: center;
+    letter-spacing: .1rem;
+    border-radius: 2px;
+    font-size: .5em;
+    padding: .2em .4em;
+    /* display: inline-block; */
+
+    &--half {
+        width: 50%;
+    }
+}
+
+.block-red {
+    background-color: red;
+    height: 50px;
+    /* display: inline-block; */
+}
+
+.block-yellow {
+    background-color: yellow;
+    height: 100px;
+    /* display: inline-block; */
+}
+
+.block-orange {
+    background-color: orange;
+    height: 50px;
+    /* display: inline-block; */
+}
+
+.block-purple {
+    background-color: violet;
+    height: 50px;
+    /* display: inline-block; */
+}
+
+.block-black {
+    background-color: black;
+    height: 50px;
+    /* display: inline-block; */
+}
+
+.block-blue {
+    background-color: blue;
+    height: 50px;
+    /* display: inline-block; */
+}
