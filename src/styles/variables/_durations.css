@@ -1,0 +1,13 @@
+
+
+:root {
+
+    /* Durations for transition */
+    --animation-duration-short: .2s;
+    --animation-duration: .3s;
+    --animation-duration-long: .4s;
+
+    /* Link animation duration */ 
+    --link-transition-short: .15s;
+
+}
