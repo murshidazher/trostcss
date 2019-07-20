@@ -1,0 +1,15 @@
+.bdr-clps {
+    &--s {
+        border-collapse: separate;
+    }
+
+    &--c {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
