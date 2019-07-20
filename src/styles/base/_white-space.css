@@ -1,0 +1,5 @@
+.ws--nowrap {
+    grid-auto-columns: 0%;
+    grid-auto-flow: column;
+    white-space: nowrap;
+}
