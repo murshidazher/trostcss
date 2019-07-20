@@ -1,0 +1,16 @@
+/* Solves the bud that occurs when two float elements are stacked together */
+@define-mixin clearfix {
+
+    &::before, &::after {
+        content: "";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+.clearfix {
+    @mixin clearfix;
+}
