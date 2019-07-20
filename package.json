@@ -9,7 +9,7 @@
     "start": "",
     "compile:dist": "export NODE_ENV=production && gulp build:dist",
     "compile:dev": "export NODE_ENV=development && gulp build:dev",
-    "watch": "gulp watch:trost",
+    "watch": "export NODE_ENV=development &&  gulp watch:trost",
     "lint": "eslint **/*.js",
     "lint:fix": "prettier-eslint '**/*.js' --write",
     "deploy": "gh-pages -d trost"
