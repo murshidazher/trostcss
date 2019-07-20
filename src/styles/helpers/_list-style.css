@@ -1,0 +1,107 @@
+/* List style */
+
+.lst {
+
+    &--none {
+        list-style: none;
+    }
+
+    &--initial {
+        list-style-type: initial;
+    }
+
+    &--inherit {
+        list-style-type: inherit;
+    }
+
+    &--armenian {
+        list-style-type: armenian;
+    }
+
+    &--decimal {
+        list-style-type: decimal;
+    }
+
+    &--z-decimal {
+        list-style-type: decimal-leading-zero;
+    }
+
+    &--georgian {
+        list-style-type: georgian;
+    }
+
+    &--hebrew {
+        list-style-type: hebrew;
+    }
+
+    &--hiragana {
+        list-style-type: hiragana;
+    }
+
+    &--i-hiragana {
+        list-style-type: hiragana-iroha;
+    }
+
+    &--katakana {
+        list-style-type: katakana;
+    }
+
+    &--i-katakana {
+        list-style-type: katakana-iroha;
+    }
+
+    &--l-greek {
+        list-style-type: lower-greek;
+    }
+
+    &--l-latin {
+        list-style-type: lower-latin;
+    }
+
+    &--l-roman {
+        list-style-type: lower-roman;
+    }
+
+    &--u-alpha {
+        list-style-type: upper-alpha;
+    }
+
+    &--u-greek {
+        list-style-type: upper-greek;
+    }
+
+    &--u-latin {
+        list-style-type: upper-latin;
+    }
+
+    
+
+    &--cjk {
+        list-style-type: cjk-ideographic;
+    }
+
+    &--disc {
+        list-style-type: disc;
+    }
+
+    &--circle {
+        list-style-type: circle;
+    }
+
+    &--square {
+        list-style-type: square;
+    }
+
+    &--u-roman {
+        list-style-type: upper-roman;
+    }
+
+    &--l-alpha {
+        list-style-type: lower-alpha;
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
