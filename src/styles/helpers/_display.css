@@ -1,0 +1,75 @@
+.dspy {
+
+    &--none {
+        display: none;
+    }
+
+    &--b {
+        display: block;
+    }
+
+    &--fr {
+        display: flow-root;
+    }
+
+    &--f {
+        display: flex;
+    }
+
+    &--g {
+        display: grid;
+    }
+
+    &--i {
+        display: inline;
+    }
+
+    &--ib {
+        display: inline-block;
+    }
+
+    &--it {
+        display: inline-table;
+    }
+
+    &--t {
+        display: table;
+    }
+
+    &--t-cell {
+        display: table-cell;
+    }
+
+    &--t-col {
+        display: table-column;
+    }
+
+    &--t-col-g {
+        display: table-colgroup;
+    }
+
+    &--t-row {
+        display: table-row;
+    }
+
+    &--t-row-g {
+        display: table-row-group;
+    }
+
+    &--t-hd-g {
+        display: table-header-group;
+    }
+
+    &--t-ftr-g {
+        display: table-footer-group;
+    }
+
+    &--t-cap {
+        display: table-caption;
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
