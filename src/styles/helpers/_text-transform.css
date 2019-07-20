@@ -1,0 +1,118 @@
+/*
+    TEXT TRANSFORM
+
+    Base:
+        tt : text transform
+
+    Modifiers:
+        none : no transformation
+        uppr: uppercase
+        lowr: lowercase
+        caps: capitalize 
+
+    Media Query Extensions : 
+        -xl : small
+        -md : medium
+        -lg : large
+        -xl : extra large
+*/
+
+.tt {
+
+    &--none {
+        text-transform: none;
+    }
+
+    &--uppr {
+        text-transform: uppercase;
+    }
+
+    &--lowr {
+        text-transform: lowercase;
+    }
+
+    &--caps {
+        text-transform: capitalize;
+    }
+}
+
+@mixin atSmall {
+    .tt {
+
+        &--none-sm {
+            text-transform: none;
+        }
+    
+        &--uppr-sm {
+            text-transform: uppercase;
+        }
+    
+        &--lowr-sm {
+            text-transform: lowercase;
+        }
+    
+        &--caps-sm {
+            text-transform: capitalize;
+        }
+    }
+}
+@mixin atMedium {
+    .tt {
+
+        &--none-md {
+            text-transform: none;
+        }
+    
+        &--uppr-md {
+            text-transform: uppercase;
+        }
+    
+        &--lowr-md {
+            text-transform: lowercase;
+        }
+    
+        &--caps-md {
+            text-transform: capitalize;
+        }
+    }
+}
+@mixin atLarge {
+    .tt {
+
+        &--none-lg {
+            text-transform: none;
+        }
+    
+        &--uppr-lg {
+            text-transform: uppercase;
+        }
+    
+        &--lowr-lg {
+            text-transform: lowercase;
+        }
+    
+        &--caps-lg {
+            text-transform: capitalize;
+        }
+    }
+}
+@mixin atExLarge {
+    .tt {
+
+        &--none-xl {
+            text-transform: none;
+        }
+    
+        &--uppr-xl {
+            text-transform: uppercase;
+        }
+    
+        &--lowr-xl {
+            text-transform: lowercase;
+        }
+    
+        &--caps-xl {
+            text-transform: capitalize;
+        }
+    }
+}
