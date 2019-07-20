@@ -1,0 +1,50 @@
+/*
+    Text Indentation
+*/
+
+.ti {
+
+    &--none {
+        text-indent: 0;
+    }
+
+    &--ot {
+
+        &1 {
+            text-indent: -1em;
+        }
+    
+        &2 {
+            text-indent: -2em;
+        }
+    
+        &3 {
+            text-indent: -2.5em;
+        }
+    
+        &4 {
+            text-indent: -3em;
+        }
+    }
+
+    &1 {
+        text-indent: 1em;
+    }
+
+    &2 {
+        text-indent: 2em;
+    }
+
+    &3 {
+        text-indent: 2.5em;
+    }
+
+    &4 {
+        text-indent: 3em;
+    }
+}
+
+@mixin atSmall {}
+@mixin atMedium {}
+@mixin atLarge {}
+@mixin atExLarge {}
