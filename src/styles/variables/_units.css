@@ -1,0 +1,43 @@
+/* Base font-size */
+$browser-default-font-size: 16; /* Dont add any units */
+$browser-default-font-percent: calc(($browser-default-font-size / 16) * 100%);
+
+$base-font-size: 1.6rem;
+$line-height-ratio: 1.25rem;
+
+/* Button Dimensions */
+$btn-xl-width: 124px;
+$btn-xl-height: 124px;
+
+$btn-lg-width: 124px;
+$btn-lg-height: 124px;
+
+$btn-md-width: 124px;
+$btn-md-height: 124px;
+
+$btn-sm-width: 124px;
+$btn-sm-height: 124px;
+
+$btn-xs-width: 124px;
+$btn-xs-height: 124px;
+
+
+/* Break points */
+
+/* Gutter sizes */
+
+/* Column Width */
+
+/* Wrapper Margins */
+
+/* Underline Units */
+$text-underline-opacity: 0.5;
+$text-underline-position: -.14em;
+$text-underline-size: .02em;
+$text-underline-gap: .05em;
+$text-underline-gap-minimum: 1.5px;
+
+
+
+/* Grid Variables */
+$grid-columns: 12;
