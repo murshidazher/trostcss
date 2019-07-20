@@ -1,0 +1,161 @@
+/*
+
+    LETTER SPACING
+        - Spacing between letters
+
+    Base:
+        ls : letter space
+
+    Modifier:
+        title-uppr: title uppercase spacing
+
+    Media Query Extensions : 
+        -sm : small
+        -md : medium
+        -lg : large
+        -xl : extra large
+*/
+
+.ls {
+    letter-spacing: .1em;
+
+    &--tight {
+        letter-spacing:  -.05em;
+    }
+
+    &--compact {
+        letter-spacing:  -.01em;
+    }
+
+    &--breathe {
+        letter-spacing: .03em;
+    }
+
+    &--heave {
+        letter-spacing: .06em;
+    }
+
+    &--stretch {
+        letter-spacing:  .15em;
+    }
+
+    &--title-uppr {
+        letter-spacing: .02em;
+    }
+}
+
+@mixin atSmall {
+    .ls {
+
+        &-sm {
+            letter-spacing: .1em;
+        }
+        
+        &--tight-sm {
+            letter-spacing:  -.05em;
+        }
+    
+        &--compact-sm {
+            letter-spacing:  -.01em;
+        }
+    
+        &--breathe-sm {
+            letter-spacing: .03em;
+        }
+    
+        &--heave-sm {
+            letter-spacing: .06em;
+        }
+    
+        &--stretch-sm {
+            letter-spacing:  .15em;
+        }
+    }
+}
+
+@mixin atMedium {
+    .ls {
+
+        &-md {
+            letter-spacing: .1em;
+        }
+        
+        &--tight-md {
+            letter-spacing:  -.05em;
+        }
+    
+        &--compact-md {
+            letter-spacing:  -.01em;
+        }
+    
+        &--breathe-md {
+            letter-spacing: .03em;
+        }
+    
+        &--heave-md {
+            letter-spacing: .06em;
+        }
+    
+        &--stretch-md {
+            letter-spacing:  .15em;
+        }
+    }
+}
+
+@mixin atLarge {
+    .ls {
+
+        &-lg {
+            letter-spacing: .1em;
+        }
+        
+        &--tight-lg {
+            letter-spacing:  -.05em;
+        }
+    
+        &--compact-lg {
+            letter-spacing:  -.01em;
+        }
+    
+        &--breathe-lg {
+            letter-spacing: .03em;
+        }
+    
+        &--heave-lg {
+            letter-spacing: .06em;
+        }
+    
+        &--stretch-lg {
+            letter-spacing:  .15em;
+        }
+    }
+}
+
+@mixin atExLarge {
+    .ls {
+
+        &-xl {
+            letter-spacing: .1em;
+        }
+        
+        &--tight-xl {
+            letter-spacing:  -.05em;
+        }
+    
+        &--compact-xl {
+            letter-spacing:  -.01em;
+        }
+    
+        &--breathe-xl {
+            letter-spacing: .03em;
+        }
+    
+        &--heave-xl {
+            letter-spacing: .06em;
+        }
+    
+        &--stretch-xl {
+            letter-spacing:  .15em;
+        }
+    }
+}
