@@ -1,0 +1,28 @@
+/* Text Underline */
+
+.up {
+
+    &--under {
+        text-underline-position: under;
+    }
+
+    &--auto {
+        text-underline-position: auto;
+    }
+
+    &--left {
+        text-underline-position: left;
+    }
+
+    &--right {
+        text-underline-position: right;
+    }
+
+    &--under-left {
+        text-underline-position: under left;
+    }
+
+    &--right-under {
+        text-underline-position: right under;
+    }
+}
