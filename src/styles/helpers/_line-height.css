@@ -1,0 +1,106 @@
+:root {
+     /* line-height */
+     --lead-line-height: 1.25;
+     --heading-line-height: 1;
+     --body-line-height: 1.5;
+}
+
+/*
+    LINE HEIGHT
+        - Harmonious vertical spacing
+    
+    Base:
+        lh: line height
+        
+    Modifier:
+        --head: all
+        --body:
+        --lead:
+
+
+    Media Query Extensions : 
+        -sm : small
+        -md : medium
+        -lg : large
+        -xl : extra large
+*/
+
+.lh {
+    &--lead { 
+        line-height: var(--lead-line-height);
+    }
+
+    &--body { 
+        line-height: var(--body-line-height);
+    }
+
+    &--head { 
+        line-height: var(--heading-line-height);
+    }
+}
+
+@mixin atSmall {
+
+    .lh {
+        &--lead-sm { 
+            line-height: var(--lead-line-height);
+        }
+    
+        &--body-sm { 
+            line-height: var(--body-line-height);
+        }
+    
+        &--head-sm { 
+            line-height: var(--heading-line-height);
+        }
+    }
+        
+}
+
+@mixin atMedium {
+    .lh {
+        &--lead-md { 
+            line-height: var(--lead-line-height);
+        }
+    
+        &--body-md { 
+            line-height: var(--body-line-height);
+        }
+    
+        &--head-md { 
+            line-height: var(--heading-line-height);
+        }
+    }
+}
+
+@mixin atLarge {
+    .lh {
+        &--lead-lg { 
+            line-height: var(--lead-line-height);
+        }
+    
+        &--body-lg { 
+            line-height: var(--body-line-height);
+        }
+    
+        &--head-lg { 
+            line-height: var(--heading-line-height);
+        }
+    }
+}
+
+@mixin atExLarge {
+    .lh {
+        &--lead-xl { 
+            line-height: var(--lead-line-height);
+        }
+    
+        &--body-xl { 
+            line-height: var(--body-line-height);
+        }
+    
+        &--head-xl { 
+            line-height: var(--heading-line-height);
+        }
+    }
+}
