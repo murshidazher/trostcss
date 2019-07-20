@@ -19,7 +19,7 @@ gulp.task('watch:trost', function () {
 
 });
 
-gulp.task('css:inject', gulp.series('styles:trost', function () {
-    return gulp.src('./trost/assets/styles/trost.css').pipe(browserSync.stream());
+gulp.task('css:inject', gulp.series('build:dev', function () {
+    return gulp.src('./trost/assets/styles/trost.min.css').pipe(browserSync.stream());
 }));
 
