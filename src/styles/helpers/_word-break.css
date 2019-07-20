@@ -1,0 +1,28 @@
+/* Word Breaks
+        Controls line break in words 
+
+    Code -> 
+    Paragraph -> 
+    Heading -> 
+
+*/
+
+.wb {
+
+    &--normal {
+        word-break: normal;
+    }
+
+    &--brkall {
+        word-break: break-all;
+    }
+
+    &--kpall {
+        word-break: keep-all;
+    }
+
+    &--brkwrd {
+        word-break: break-word;
+    }
+
+}
