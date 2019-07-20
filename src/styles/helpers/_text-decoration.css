@@ -1,0 +1,157 @@
+/*
+    TEXT DECORATION
+
+    Base:
+        tdeco : text decoration
+
+    Media Query Extensions : 
+        -xl : small
+        -md : medium
+        -lg : large
+        -xl : extra large
+*/
+
+.underline {
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
+    line-height: 1;
+}
+
+.tdeco {
+
+    &--overline,
+    .overline {
+        text-decoration: overline;
+    }
+
+    &--no-underline,
+    .no-underline {
+        text-decoration: none;
+    }
+
+    /* custom underline */
+    &--underline {
+        text-decoration: underline;
+    }
+
+    
+
+    &--strike-through,
+    .strike-through {
+        text-decoration: line-through;
+    }
+}
+
+@mixin atSmall {
+    .tdeco {
+
+        &--overline-sm,
+        .overline-sm {
+            text-decoration: overline;
+        }
+    
+        &--no-underline-sm,
+        .no-underline-sm {
+            text-decoration: none;
+        }
+    
+        /* custom underline */
+        &--underline-sm,
+        .underline-sm {
+            border-bottom: 1px solid var(--achelois-underline);
+            display: inline-block;
+            line-height: .9;
+            text-shadow: 1px 1px var(--achelois-background), .1px -.1px var(--achelois-background), -.1px .1px var(--achelois-background), -.1px .1px var(--achelois-background);
+        }
+    
+        &--strike-through-sm,
+        .strike-through-sm {
+            text-decoration: line-through;
+        }
+    }
+}
+
+@mixin atMedium {
+    .tdeco {
+
+        &--overline-md,
+        .overline-md {
+            text-decoration: overline;
+        }
+    
+        &--no-underline-md,
+        .no-underline-md {
+            text-decoration: none;
+        }
+    
+        /* custom underline */
+        &--underline-md,
+        .underline-md {
+            border-bottom: 1px solid var(--achelois-underline);
+            display: inline-block;
+            line-height: .9;
+            text-shadow: 1px 1px var(--achelois-background), .1px -.1px var(--achelois-background), -.1px .1px var(--achelois-background), -.1px .1px var(--achelois-background);
+        }
+    
+        &--strike-through-md,
+        .strike-through-md {
+            text-decoration: line-through;
+        }
+    }
+}
+@mixin atLarge {
+    .tdeco {
+
+        &--overline-lg,
+        .overline-lg {
+            text-decoration: overline;
+        }
+    
+        &--no-underline-lg,
+        .no-underline-lg {
+            text-decoration: none;
+        }
+    
+        /* custom underline */
+        &--underline-lg,
+        .underline-lg {
+            border-bottom: 1px solid var(--achelois-underline);
+            display: inline-block;
+            line-height: .9;
+            text-shadow: 1px 1px var(--achelois-background), .1px -.1px var(--achelois-background), -.1px .1px var(--achelois-background), -.1px .1px var(--achelois-background);
+        }
+    
+        &--strike-through-lg,
+        .strike-through-lg {
+            text-decoration: line-through;
+        }
+    }
+}
+@mixin atExLarge {
+    .tdeco {
+
+        &--overline-xl,
+        .overline-xl {
+            text-decoration: overline;
+        }
+    
+        &--no-underline-xl,
+        .no-underline-xl {
+            text-decoration: none;
+        }
+    
+        /* custom underline */
+        &--underline-xl,
+        .underline-xl {
+            border-bottom: 1px solid var(--achelois-underline);
+            display: inline-block;
+            line-height: .9;
+            text-shadow: 1px 1px var(--achelois-background), .1px -.1px var(--achelois-background), -.1px .1px var(--achelois-background), -.1px .1px var(--achelois-background);
+        }
+    
+        &--strike-through-xl,
+        .strike-through-xl {
+            text-decoration: line-through;
+        }
+    }
+}
