@@ -1,0 +1,275 @@
+:root {
+    --font-primary: sans-serif;
+    --font-secondary: serif;
+
+    /* set base values */
+    --text-base-size: 1em;
+    --text-scale-ratio: 1.141;
+
+    /* type scale */
+    --text-xs: calc(1em / (var(--text-scale-ratio)));
+    --text-sm: calc(1em * var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    /* hero scale */
+    --text-title: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)* var(--text-scale-ratio)* var(--text-scale-ratio)* var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)* var(--text-scale-ratio)* var(--text-scale-ratio)* var(--text-scale-ratio));
+
+    --text-headline: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)* var(--text-scale-ratio)* var(--text-scale-ratio)* var(--text-scale-ratio)* var(--text-scale-ratio));
+
+    --text-subhead: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+}
+
+/*
+    ---
+    Title:   Typescale
+    Topic:   Typography
+    Section: Helpers
+    ---
+
+    Description: 
+        Modular font scaling. 
+    
+    Note: 
+        Font size decreases as the scale increases.
+
+    Convention:
+
+        Modifier: 
+            f[number]: number ranges from 1 - 7
+            f-[role]: [headline, subhead] - used as hero title
+
+        Extension:
+            -[sm/md/lg/xl]: suffix 
+                -sm: small
+                -md: medium
+                -lg: large
+                -xl: extra large
+*/
+
+.f-title {
+    font-size: var(--text-title);
+}
+
+.f-headline {
+    font-size: var(--text-headline);
+} 
+
+.f-subhead {
+    font-size: var(--text-subhead);
+}
+
+.f1 {
+    font-size: var(--text-xxxl);
+}
+
+.f2 {
+    font-size: var(--text-xxl);
+}
+
+.f3 {
+    font-size: var(--text-xl);
+}
+
+.f4 {
+    font-size: var(--text-lg);
+}
+
+.f5 {
+    font-size: var(--text-md);
+}
+
+.f6 {
+    font-size: var(--text-sm);
+}
+
+.f7 {
+    font-size: var(--text-xs);
+}
+
+.f-a,
+.f-link {
+
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+}
+
+@mixin atSmall {
+
+    .f-title-sm {
+        font-size: var(--text-title);
+    }
+
+    .f-headline-sm {
+        font-size: var(--text-headline);
+    } 
+    
+    .f-subhead-sm {
+        font-size: var(--text-subhead);
+    }
+    
+    .f1-sm {
+        font-size: var(--text-xxxl);
+    }
+    
+    .f2-sm {
+        font-size: var(--text-xxl);
+    }
+    
+    .f3-sm {
+        font-size: var(--text-xl);
+    }
+    
+    .f4-sm {
+        font-size: var(--text-lg);
+    }
+    
+    .f5-sm {
+        font-size: var(--text-md);
+    }
+    
+    .f6-sm {
+        font-size: var(--text-sm);
+    }
+    
+    .f7-sm {
+        font-size: var(--text-xs);
+    }
+}
+
+@mixin atMedium {
+
+    .f-title-md {
+        font-size: var(--text-title);
+    }
+
+    .f-headline-md {
+        font-size: var(--text-headline);
+    } 
+    
+    .f-subhead-md {
+        font-size: var(--text-subhead);
+    }
+    
+    .f1-md {
+        font-size: var(--text-xxxl);
+    }
+    
+    .f2-md {
+        font-size: var(--text-xxl);
+    }
+    
+    .f3-md {
+        font-size: var(--text-xl);
+    }
+    
+    .f4-md {
+        font-size: var(--text-lg);
+    }
+    
+    .f5-md {
+        font-size: var(--text-md);
+    }
+    
+    .f6-md {
+        font-size: var(--text-sm);
+    }
+    
+    .f7-md {
+        font-size: var(--text-xs);
+    }
+}
+
+@mixin atLarge {
+
+    .f-title-lg {
+        font-size: var(--text-title);
+    }
+
+    .f-headline-lg {
+        font-size: var(--text-headline);
+    } 
+    
+    .f-subhead-lg {
+        font-size: var(--text-subhead);
+    }
+    
+    .f1-lg  {
+        font-size: var(--text-xxxl);
+    }
+    
+    .f2-lg {
+        font-size: var(--text-xxl);
+    }
+    
+    .f3-lg {
+        font-size: var(--text-xl);
+    }
+    
+    .f4-lg {
+        font-size: var(--text-lg);
+    }
+    
+    .f5-lg {
+        font-size: var(--text-md);
+    }
+    
+    .f6-lg {
+        font-size: var(--text-sm);
+    }
+    
+    .f7-lg {
+        font-size: var(--text-xs);
+    }
+}
+
+@mixin atExLarge {
+
+    .f-title-xl {
+        font-size: var(--text-title);
+    }
+
+    .f-headline-xl {
+        font-size: var(--text-headline);
+    } 
+    
+    .f-subhead-xl {
+        font-size: var(--text-subhead);
+    }
+    
+    .f1-xl {
+        font-size: var(--text-xxxl);
+    }
+    
+    .f2-xl {
+        font-size: var(--text-xxl);
+    }
+    
+    .f3-xl {
+        font-size: var(--text-xl);
+    }
+    
+    .f4-xl {
+        font-size: var(--text-lg);
+    }
+    
+    .f5-xl {
+        font-size: var(--text-md);
+    }
+    
+    .f6-xl {
+        font-size: var(--text-sm);
+    }
+    
+    .f7-xl {
+        font-size: var(--text-xs);
+    }
+}
