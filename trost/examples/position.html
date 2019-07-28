@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Line Height</title>
+  <title>Position</title>
   <meta name="keywords"
     content="A modular, lightweight and responsive front-end framework for rapid prototyping and UI development." />
   <meta name="description"
@@ -54,86 +54,81 @@
     <main class="col-9 bg--silver-lightest">
       <div class="row ma--hor-7 ma--top-6">
         <div class="col-12 ">
-
-
-
           <div class="row ma--btm-4">
             <div class=" col-12  bdr-r2 pa--ver-6 pa--hor-6  bg--white  flt--left">
 
-              <h1 class="f3 fw--bold ma--btm-3">Line Height</h1>
+              <h1 class="f3 fw--bold ma--btm-3">Position</h1>
               <p class="f6 fw--regular lh--lead ls--breathe chw--sans-48 ma--btm-5">
-                Harmonious verical spacing between two inline elements. <br>
+                Defines the vertical alignment of an inline element or table-cell boxes.<br>
               </p>
-              <h1 class="ls--title-uppr tt--uppr fw--bold clr--gray ma--btm-4"><small>Syntax</small></h1>
+              <h1 class="ls--title-uppr tt--uppr fw--bold clr--gray ma--btm-4"><small>Examples</small></h1>
 
-              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Default</small></h1>
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Relative</small></h1>
               <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
-              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
-                By default there is no line-height applied to any text.
-              </p>
 
-              <div class="ma--btm-5">
-                <p class="chw--sans-ideal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam doloremque alias veniam doloribus obcaecati recusandae odit, libero voluptatem ipsa
-                  tempore! Minus fugit cum, quae vitae eos dolorum nemo non eaque.</p>
+
+
+
+              <div class="ma--btm-5 pa--hor-3 pa--ver-2 bdr bdr--dashed">
+                <p class="w-30 h3 bdr dspy--ib v-top ta--justify lh--body whs--normal ma--rgt-4"> </p>
+
+                <p class="w-30 h2 bdr dspy--ib v-top ta--justify lh--body whs--normal ma--rgt-4"></p>
+
+                <p class="w-30 h1 bdr dspy--ib v-top ta--justify lh--body whs--normal "></p>
+              </div>
+
+              <pre class="code-snippet ma--btm-5">
+                    <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>v-top</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+                </pre>
+
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Absolute</small></h1>
+              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+
+
+
+
+              <div class="ma--btm-5 pa--hor-3 pa--ver-2 bdr bdr--dashed">
+                <p class="w-30 h3 bdr dspy--ib v-middle ta--justify lh--body whs--normal ma--rgt-4"> </p>
+
+                <p class="w-30 h2 bdr dspy--ib v-middle ta--justify lh--body whs--normal ma--rgt-4"></p>
+
+                <p class="w-30 h1 bdr dspy--ib v-middle ta--justify lh--body whs--normal "></p>
+              </div>
+
+              <pre class="code-snippet ma--btm-5">
+                    <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>v-middle</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+                </pre>
+
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Static</small></h1>
+              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+
+              <div class="ma--btm-5 pa--hor-3 pa--ver-2 bdr bdr--dashed">
+                <p class="w-30 h3 bdr dspy--ib v-bottom ta--justify lh--body whs--normal ma--rgt-4"> </p>
+
+                <p class="w-30 h2 bdr dspy--ib v-bottom ta--justify lh--body whs--normal ma--rgt-4"></p>
+
+                <p class="w-30 h1 bdr dspy--ib v-bottom ta--justify lh--body whs--normal "></p>
+              </div>
+
+              <pre class="code-snippet ma--btm-5">
+                    <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>v-bottom</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+                </pre>
+
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Baseline</small></h1>
+              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+
+              <div class="ma--btm-5 pa--hor-3 pa--ver-2 bdr bdr--dashed">
+                <p class="w-30 h3 bdr dspy--ib v-baseline ta--justify lh--body whs--normal ma--rgt-4"> </p>
+
+                <p class="w-30 h2 bdr dspy--ib v-baseline ta--justify lh--body whs--normal ma--rgt-4"></p>
+
+                <p class="w-30 h1 bdr dspy--ib v-baseline ta--justify lh--body whs--normal "></p>
               </div>
 
               <pre class="code-snippet ma--btm-7">
-                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
-              </pre>
+                    <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>v-baseline</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+                </pre>
 
-              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Heading</small></h1>
-              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
-              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
-                Add <code class="pa--hor-4 pa--ver-2 bdr-r--pill clr--white fw--bold "
-                  style="background: #6D44DE;"><span class="pa--hor-1">lh--head</span></code> class to heading.
-              </p>
-
-              <div class="ma--btm-5">
-                <h1 class="f-subhead lh--head ma--btm-4">The quick brown fox jumps over the lazy dog</h1>
-              </div>
-
-              <pre class="code-snippet ma--btm-7">
-                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;h1 class=&quot;<span>lh--head</span>&quot;&gt;<br>&nbsp;&nbsp;The quick brown fox jumps over the lazy dog<br>&lt;/h1&gt;</code>
-              </pre>
-
-
-              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Paragraph</small></h1>
-              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
-              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
-                Add <code class="pa--hor-4 pa--ver-2 bdr-r--pill clr--white fw--bold "
-                  style="background: #6D44DE;"><span class="pa--hor-1">lh--body</span></code> class to body text to have
-                an ideal line-height for readability.
-              </p>
-
-              <div class="ma--btm-5">
-                <p class="chw--sans-ideal lh--body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam doloremque alias veniam doloribus obcaecati recusandae odit, libero voluptatem ipsa
-                  tempore! Minus fugit cum, quae vitae eos dolorum nemo non eaque.</p>
-              </div>
-
-              <pre class="code-snippet ma--btm-7">
-                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>lh--body</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
-              </pre>
-
-
-              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Lead</small></h1>
-              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
-              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
-                Add <code class="pa--hor-4 pa--ver-2 bdr-r--pill clr--white fw--bold "
-                  style="background: #6D44DE;"><span class="pa--hor-1">lh--lead</span></code> class to the leading text
-                to have an ideal line-height for readability.
-              </p>
-
-              <div class="ma--btm-5">
-                <p class="chw--sans-ideal lh--lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam doloremque alias veniam doloribus obcaecati recusandae odit, libero voluptatem ipsa
-                  tempore! Minus fugit cum, quae vitae eos dolorum nemo non eaque.</p>
-              </div>
-
-              <pre class="code-snippet ma--btm-7">
-                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>lh--lead</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
-              </pre>
             </div>
           </div>
 
@@ -168,10 +163,6 @@
       </div>
 
       <footer class="pa--ver-5 bdr--top bdr--gray-light ma--btm-3">
-
-
-
-
         <div class="row ma--btm-6">
           <div class="col-12">
             <p class="pa--hor-7 ta--left ls--stretch"><small><span class="fw--bold">TROSTCSS</span> v0.1.0<span
