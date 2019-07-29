@@ -58,7 +58,6 @@
 @import "_font-stack.css";
 @import "_typescale.css";
 @import "_vertical-align.css";
-@import "_spacing.css";
 @import "_line-height.css";
 @import "_letter-spacing.css";
 @import "_word-spacing.css";
@@ -77,12 +76,9 @@
 @import "_hyphens.css";
 @import "_word-break.css";
 @import "_text-overflow.css";
-@import "_overflow-wrap.css";
 @import "_user-select.css";
 @import "_hanging-punctuation.css";
-@import "_horizontal-rule.css";
 @import "_text-underline.css";
-@import "_writing-mode.css";
 
 /* Layout helpers */
 @import "_display.css";
@@ -94,7 +90,6 @@
 @import "_flexbox.css";
 @import "_float.css";
 @import "_rotate.css";
-
 
 /* Borders */
 @import "_border.css";
@@ -108,17 +103,10 @@
 @import "_list-position.css";
 @import "_list-nested.css";
 
-/* Pointers */
-@import "_cursor.css";
-
-/* Shadows */
-@import "_box-shadow.css";
-
-
-
 /* Table Layout */
 @import "_table-layout.css";
 @import "_border-collapse.css";
+@import "_spacing.css";
 
 /* Filers */
 @import "_opacity.css";

@@ -1,75 +1,98 @@
 .dspy {
+  &--none {
+    display: none;
+  }
 
-    &--none {
-        display: none;
-    }
+  &--b {
+    display: block;
+  }
 
-    &--b {
-        display: block;
-    }
+  &--fr {
+    display: flow-root;
+  }
 
-    &--fr {
-        display: flow-root;
-    }
+  &--f {
+    display: flex;
+  }
 
-    &--f {
-        display: flex;
-    }
+  &--g {
+    display: grid;
+  }
 
-    &--g {
-        display: grid;
-    }
+  &--i {
+    display: inline;
+  }
 
-    &--i {
-        display: inline;
-    }
+  &--ib {
+    display: inline-block;
+  }
 
-    &--ib {
-        display: inline-block;
-    }
+  &--it {
+    display: inline-table;
+  }
 
-    &--it {
-        display: inline-table;
-    }
+  &--t {
+    display: table;
+  }
 
-    &--t {
-        display: table;
-    }
+  &--t-cell {
+    display: table-cell;
+  }
 
-    &--t-cell {
-        display: table-cell;
-    }
+  &--t-col {
+    display: table-column;
+  }
 
-    &--t-col {
-        display: table-column;
-    }
+  &--t-col-g {
+    display: table-colgroup;
+  }
 
-    &--t-col-g {
-        display: table-colgroup;
-    }
+  &--t-row {
+    display: table-row;
+  }
 
-    &--t-row {
-        display: table-row;
-    }
+  &--t-row-g {
+    display: table-row-group;
+  }
 
-    &--t-row-g {
-        display: table-row-group;
-    }
+  &--t-hd-g {
+    display: table-header-group;
+  }
 
-    &--t-hd-g {
-        display: table-header-group;
-    }
+  &--t-ftr-g {
+    display: table-footer-group;
+  }
 
-    &--t-ftr-g {
-        display: table-footer-group;
-    }
-
-    &--t-cap {
-        display: table-caption;
-    }
+  &--t-cap {
+    display: table-caption;
+  }
 }
 
-@mixin atSmall {}
-@mixin atMedium {}
-@mixin atLarge {}
-@mixin atExLarge {}
+@mixin atSmall {
+  .dspy {
+    &--none-sm {
+      display: none;
+    }
+  }
+}
+@mixin atMedium {
+  .dspy {
+    &--none-md {
+      display: none;
+    }
+  }
+}
+@mixin atLarge {
+  .dspy {
+    &--none-lg {
+      display: none;
+    }
+  }
+}
+@mixin atExLarge {
+  .dspy {
+    &--none-xl {
+      display: none;
+    }
+  }
+}

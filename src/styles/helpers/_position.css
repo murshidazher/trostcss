@@ -1,30 +1,118 @@
 /* All postion elements */
 
 .pos {
-    &--fixed {
-        position: fixed;
-    }
+  &--fixed {
+    position: fixed;
+  }
 
-    &--absolute {
-        position: absolute;
-    }
+  &--absolute {
+    position: absolute;
+  }
 
-    &--static {
-        position: static;
-    }
+  &--static {
+    position: static;
+  }
 
-    &--relative {
-        position: relative;
-    }
+  &--relative {
+    position: relative;
+  }
 
-    &--sticky {
-        position: sticky;
-    }
+  &--sticky {
+    position: sticky;
+  }
 }
 
 /* add  all the media query classes */
 
-@mixin atSmall {}
-@mixin atMedium {}
-@mixin atLarge {}
-@mixin atExLarge {}
+@mixin atSmall {
+  .pos {
+    &--fixed-sm {
+      position: fixed;
+    }
+
+    &--absolute-sm {
+      position: absolute;
+    }
+
+    &--static-sm {
+      position: static;
+    }
+
+    &--relative-sm {
+      position: relative;
+    }
+
+    &--sticky-sm {
+      position: sticky;
+    }
+  }
+}
+@mixin atMedium {
+  .pos {
+    &--fixed-md {
+      position: fixed;
+    }
+
+    &--absolute-md {
+      position: absolute;
+    }
+
+    &--static-md {
+      position: static;
+    }
+
+    &--relative-md {
+      position: relative;
+    }
+
+    &--sticky-md {
+      position: sticky;
+    }
+  }
+}
+@mixin atLarge {
+  .pos {
+    &--fixed-lg {
+      position: fixed;
+    }
+
+    &--absolute-lg {
+      position: absolute;
+    }
+
+    &--static-lg {
+      position: static;
+    }
+
+    &--relative-lg {
+      position: relative;
+    }
+
+    &--sticky-lg {
+      position: sticky;
+    }
+  }
+}
+@mixin atExLarge {
+  .pos {
+    &--fixed-xl {
+      position: fixed;
+    }
+
+    &--absolute-xl {
+      position: absolute;
+    }
+
+    &--static-xl {
+      position: static;
+    }
+
+    &--relative-xl {
+      position: relative;
+    }
+
+    &--sticky-xl {
+      position: sticky;
+    }
+  }
+}

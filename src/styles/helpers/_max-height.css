@@ -1,135 +1,107 @@
 .maxh {
-    &--none,
-    &0 {
-        max-height: none;
+  &--none,
+  &0 {
+    max-height: none;
+  }
+
+  /* scale based */
+  &-1 {
+    max-height: 1em;
+  }
+
+  &-2 {
+    max-height: 2em;
+  }
+
+  &-3 {
+    max-height: 4em;
+  }
+
+  &-4 {
+    max-height: 8em;
+  }
+
+  &-5 {
+    max-height: 16em;
+  }
+
+  &-6 {
+    max-height: 24em;
+  }
+
+  &-7 {
+    max-height: 32em;
+  }
+
+  &-8 {
+    max-height: 48em;
+  }
+
+  &-9 {
+    max-height: 64em;
+  }
+
+  /* percentage based */
+  &--pct {
+    &-10 {
+      max-height: 10%;
     }
 
-    /* scale based */
-    &1 {
-        max-height: 1em;
+    &-20 {
+      max-height: 20%;
     }
 
-    &2 {
-        max-height: 2em;
+    &-25 {
+      max-height: 25%;
     }
 
-    &3 {
-        max-height: 4em;
+    &-30 {
+      max-height: 30%;
     }
 
-    &4 {
-        max-height: 8em;
+    &-third {
+      max-height: calc(100% / 3);
     }
 
-    &5 {
-        max-height: 16em;
+    &-40 {
+      max-height: 40%;
     }
 
-    &6 {
-        max-height: 24em;
+    &-50 {
+      max-height: 50%;
     }
 
-    &7 {
-        max-height: 32em;
+    &-60 {
+      max-height: 60%;
     }
 
-    &8 {
-        max-height: 48em;
+    &-two-third {
+      max-height: calc(100% / 1.5);
     }
 
-    &9 {
-        max-height: 64em;
+    &-70 {
+      max-height: 70%;
     }
 
-    &10 {
-        max-height: 96em;
+    &-80 {
+      max-height: 80%;
     }
 
-    /* percentage based */
-    &--pct {
-        &-10 {
-            max-height: 10%;
-        }
-
-        &-20 {
-            max-height: 20%;
-        }
-
-        &-25 {
-            max-height: 25%;
-        }
-
-        &-30 {
-            max-height: 30%;
-        }
-
-        &-33 {
-            max-height: 33%;
-        }
-
-        &-34 {
-            max-height: 34%;
-        }
-
-        &-35 {
-            max-height: 35%;
-        }
-
-        &-third {
-            max-height: calc(100%/3);
-        }
-
-        &-40 {
-            max-height: 40%;
-        }
-
-        &-50 {
-            max-height: 50%;
-        }
-
-        &-60 {
-            max-height: 60%;
-        }
-
-        &-66 {
-            max-height: 66%;
-        }
-
-        &-two-third {
-            max-height: calc(100% / 1.5);
-        }
-
-        &-70 {
-            max-height: 70%;
-        }
-
-        &-75 {
-            max-height: 75%;
-        }
-
-        &-80 {
-            max-height: 80%;
-        }
-
-        &-85 {
-            max-height: 85%;
-        }
-
-        &-90 {
-            max-height: 90%;
-        }
-
-        &-95 {
-            max-height: 95%;
-        }
-
-        &-100 {
-            max-height: 100%;
-        }
+    &-90 {
+      max-height: 90%;
     }
+
+    &-100 {
+      max-height: 100%;
+    }
+  }
 }
 
-@mixin atSmall {}
-@mixin atMedium {}
-@mixin atLarge {}
-@mixin atExLarge {}
+@mixin atSmall {
+}
+@mixin atMedium {
+}
+@mixin atLarge {
+}
+@mixin atExLarge {
+}

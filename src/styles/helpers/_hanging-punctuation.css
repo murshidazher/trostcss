@@ -1,29 +1,32 @@
 /* Hanging puctuations */
 
 .hp {
+  &-none {
+    hanging-punctuation: none;
+  }
 
-    &--none {
-        hanging-punctuation: none;
-    }
+  &-first {
+    hanging-punctuation: first;
+  }
 
-    &--first {
-        hanging-punctuation: first;
-    }
+  &-last {
+    hanging-punctuation: last;
+  }
 
-    &--last {
-        hanging-punctuation: last;
-    }
+  &-a-end {
+    hanging-punctuation: allow-end;
+  }
 
-    &--a-end {
-        hanging-punctuation: allow-end;
-    }
-
-    &--f-end {
-        hanging-punctuation: force-end;
-    }
+  &-f-end {
+    hanging-punctuation: force-end;
+  }
 }
 
-@mixin atSmall {}
-@mixin atMedium {}
-@mixin atLarge {}
-@mixin atExLarge {}
+@mixin atSmall {
+}
+@mixin atMedium {
+}
+@mixin atLarge {
+}
+@mixin atExLarge {
+}
