@@ -17,7 +17,7 @@ gulp.task('delete:dist', function() {
 });
 
 gulp.task('delete:trost-dev-css', function() {
-    return del('./trost/assets/styles/');
+    return del('./trost/assets/styles/lib');
 });
 
 gulp.task('minify:trost-dist', gulp.series('styles', function() {
@@ -34,14 +34,14 @@ gulp.task('minify:trost-dist', gulp.series('styles', function() {
 
 gulp.task('minify:trost-dev', gulp.series('styles:trost', function() {
 
-    var cssfile = gulp.src(['./trost/assets/styles/trost.css', '!./trost/assets/styles/*.min.css']);
+    var cssfile = gulp.src(['./trost/assets/styles/lib/trost.css', '!./trost/assets/styles/lib/*.min.css']);
      
     if(isDebug) {
 
         cssfile = cssfile.pipe(cssnano()).pipe(rename({ suffix: '.min' })); 
     }
     
-    return cssfile.pipe(gulp.dest('./trost/assets/styles/'));
+    return cssfile.pipe(gulp.dest('./trost/assets/styles/lib/'));
 }));
 
 gulp.task('build:dist',  gulp.series(['delete:dist', 'minify:trost-dist']));

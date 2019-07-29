@@ -27,5 +27,5 @@ gulp.task('styles:trost', function () {
             console.log(errorInfo.toString());
             this.emit('end');
         })
-    .pipe(gulp.dest('./trost/assets/styles/'));
+    .pipe(gulp.dest('./trost/assets/styles/lib/'));
 });
