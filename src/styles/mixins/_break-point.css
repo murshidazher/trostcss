@@ -5,28 +5,28 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @define-mixin atSmall {
-    @media (min-width: 576px) {
-        @mixin-content;
-    }
+  @media (min-width: 576px) {
+    @mixin-content;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @define-mixin atMedium {
-    @media (min-width: 768px) {
-        @mixin-content;
-    }
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 960px and up) */
 @define-mixin atLarge {
-    @media (min-width: 992px) {
-        @mixin-content;
-    }
+  @media (min-width: 960px) {
+    @mixin-content;
+  }
 }
 
 /* Extra large devices (large desktops, 1100px and up) */
 @define-mixin atExLarge {
-    @media (min-width: 1200px) {
-        @mixin-content;
-    }
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
 }
