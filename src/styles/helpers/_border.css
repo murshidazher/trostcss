@@ -1,54 +1,57 @@
 :root {
-    --border-width: 1px;
+  --border-width: 1px;
 }
 
 /* Borders */
 .bdr {
+  & {
+    border-style: solid;
+    border-width: var(--border-width);
+  }
 
-    & {
-        border-style: solid; 
-        border-width: var(--border-width);
-    }
+  &--none {
+    border-style: none;
+    border-width: 0;
+  }
 
-    &--none { 
-        border-style: none; 
-        border-width: 0;
-    }
+  &--top {
+    border-top-style: solid;
+    border-top-width: var(--border-width);
+  }
+  &--right {
+    border-right-style: solid;
+    border-right-width: var(--border-width);
+  }
 
-    &--top { 
-        border-top-style: solid; 
-        border-top-width: var(--border-width);
-    }
-    &--right { 
-        border-right-style: solid; 
-        border-right-width: var(--border-width); 
-    }
+  &--bottom {
+    border-bottom-style: solid;
+    border-bottom-width: var(--border-width);
+  }
+  &--left {
+    border-left-style: solid;
+    border-left-width: var(--border-width);
+  }
 
-    &--bottom { 
-        border-bottom-style: solid; 
-        border-bottom-width: var(--border-width); 
-    }
-    &--left {
-        border-left-style: solid;
-        border-left-width: var(--border-width); 
-    }
+  &--tb {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: var(--border-width);
+    border-top-width: var(--border-width);
+  }
 
-    &--tb {
-        border-top-style: solid; 
-        border-bottom-style: solid; 
-        border-bottom-width: var(--border-width);
-        border-top-width: var(--border-width);
-    }
-
-    &--rl {
-        border-left-style: solid;
-        border-right-style: solid;
-        border-left-width: var(--border-width); 
-        border-right-width: var(--border-width); 
-    }
+  &--rl {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: var(--border-width);
+    border-right-width: var(--border-width);
+  }
 }
 
-@mixin atSmall {}
-@mixin atMedium {}
-@mixin atLarge {}
-@mixin atExLarge {}
+@mixin atSmall {
+}
+@mixin atMedium {
+}
+@mixin atLarge {
+}
+@mixin atExLarge {
+}

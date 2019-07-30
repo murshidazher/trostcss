@@ -73,12 +73,20 @@
     &--none-sm {
       display: none;
     }
+
+    &--b-sm {
+      display: block;
+    }
   }
 }
 @mixin atMedium {
   .dspy {
     &--none-md {
       display: none;
+    }
+
+    &--b-md {
+      display: block;
     }
   }
 }
@@ -87,12 +95,20 @@
     &--none-lg {
       display: none;
     }
+
+    &--b-lg {
+      display: block;
+    }
   }
 }
 @mixin atExLarge {
   .dspy {
     &--none-xl {
       display: none;
+    }
+
+    &--b-xl {
+      display: block;
     }
   }
 }

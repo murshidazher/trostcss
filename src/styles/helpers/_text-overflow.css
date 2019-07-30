@@ -1,26 +1,15 @@
-.tof {
-    &--ellipsis {
-        text-overflow: ellipsis;
-    }
-
-    &--clip {
-        text-overflow: clip;
-    }
-}
-
 .truncate {
-    text-overflow: ellipsis;
+  text-overflow: ellipsis;
 
-    /* Required for text-overflow */
-    white-space: nowrap;
-    overflow: hidden;
+  /* Required for text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
 }
-
 
 .clip {
-    text-overflow: clip;
+  text-overflow: clip;
 
-    /* Required for text-overflow */
-    white-space: nowrap;
-    overflow: hidden;
+  /* Required for text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
 }

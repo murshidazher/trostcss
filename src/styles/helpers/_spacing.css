@@ -7,11 +7,11 @@
     --space-xxs: 0.375em;
     --space-xs: 0.5em;
     --space-sm: 0.75em;
-    --space-md: 1.5em;
-    --space-lg: 2em;
-    --space-xl: 3.25em;
-    --space-xxl: 5.25em;
-    --space-xxxl: 8.5em;
+    --space-md: 1em;
+    --space-lg: 1.5em;
+    --space-xl: 2em;
+    --space-xxl: 2.25em;
+    --space-xxxl: 3.5em;
 }
 
 /*

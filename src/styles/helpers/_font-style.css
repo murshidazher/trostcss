@@ -14,168 +14,152 @@
 
 .fs--italic,
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .fs--normal,
 .normal {
-    font-style: normal;
+  font-style: normal;
 }
 
 .fs--faded {
-    opacity: 0.75;
+  opacity: 0.75;
 }
 
 .fs--emphasis,
 .emphasis {
+  font-weight: 700;
 
+  &-light {
+    font-weight: 500;
+  }
+
+  &-small-caps {
+    font-variant-caps: all-small-caps;
+    font-feature-settings: "kern";
+
+    /* for IE */
+    letter-spacing: 0.06em;
+    font-kerning: normal;
+  }
+}
+
+@mixin atSmall {
+  .fs--italic-sm,
+  .italic-sm {
+    font-style: italic;
+  }
+
+  .fs--normal-sm,
+  .normal-sm {
+    font-style: normal;
+  }
+
+  .fs--emphasis-sm,
+  .emphasis-sm {
     font-weight: 700;
 
     &-light {
-        font-weight: 500;
+      font-weight: 500;
     }
 
     &-small-caps {
-        font-variant-caps: all-small-caps;
-        font-feature-settings: 'kern';
+      font-variant-caps: all-small-caps;
+      font-feature-settings: "kern";
 
-        /* for IE */
-        letter-spacing: 0.06em;
-        font-kerning: normal;
-
+      /* for IE */
+      letter-spacing: 0.06em;
+      font-kerning: normal;
     }
-}
-
-
-@mixin atSmall {
-
-    .fs--italic-sm,
-    .italic-sm {
-        font-style: italic;
-    }
-
-    .fs--normal-sm,
-    .normal-sm {
-        font-style: normal;
-    }
-
-    .fs--emphasis-sm,
-    .emphasis-sm {
-
-        font-weight: 700;
-
-        &-light {
-            font-weight: 500;
-        }
-
-        &-small-caps {
-            font-variant-caps: all-small-caps;
-            font-feature-settings: 'kern';
-
-            /* for IE */
-            letter-spacing: 0.06em;
-            font-kerning: normal;
-
-        }
-    }
-
+  }
 }
 
 @mixin atMedium {
+  .fs--italic-md,
+  .italic-md {
+    font-style: italic;
+  }
 
-    .fs--italic-md,
-    .italic-md {
-        font-style: italic;
+  .fs--normal-md,
+  .normal-md {
+    font-style: normal;
+  }
+
+  .fs--emphasis-md,
+  .emphasis-md {
+    font-weight: 700;
+
+    &-light {
+      font-weight: 500;
     }
 
-    .fs--normal-md,
-    .normal-md {
-        font-style: normal;
+    &-small-caps {
+      font-variant-caps: all-small-caps;
+      font-feature-settings: "kern";
+
+      /* for IE */
+      letter-spacing: 0.06em;
+      font-kerning: normal;
     }
-
-    .fs--emphasis-md,
-    .emphasis-md {
-
-        font-weight: 700;
-
-        &-light {
-            font-weight: 500;
-        }
-
-        &-small-caps {
-            font-variant-caps: all-small-caps;
-            font-feature-settings: 'kern';
-
-            /* for IE */
-            letter-spacing: 0.06em;
-            font-kerning: normal;
-
-        }
-    }
+  }
 }
 
 @mixin atLarge {
+  .fs--italic-lg,
+  .italic-lg {
+    font-style: italic;
+  }
 
-    .fs--italic-lg,
-    .italic-lg {
-        font-style: italic;
+  .fs--normal-lg,
+  .normal-lg {
+    font-style: normal;
+  }
+
+  .fs--emphasis-lg,
+  .emphasis-lg {
+    font-weight: 700;
+
+    &-light {
+      font-weight: 500;
     }
 
-    .fs--normal-lg,
-    .normal-lg {
-        font-style: normal;
+    &-small-caps {
+      font-variant-caps: all-small-caps;
+      font-feature-settings: "kern";
+
+      /* for IE */
+      letter-spacing: 0.06em;
+      font-kerning: normal;
     }
-
-    .fs--emphasis-lg,
-    .emphasis-lg {
-
-        font-weight: 700;
-
-        &-light {
-            font-weight: 500;
-        }
-
-        &-small-caps {
-            font-variant-caps: all-small-caps;
-            font-feature-settings: 'kern';
-
-            /* for IE */
-            letter-spacing: 0.06em;
-            font-kerning: normal;
-
-        }
-    }
+  }
 }
 
 @mixin atExLarge {
+  .fs--italic-xl,
+  .italic-xl {
+    font-style: italic;
+  }
 
-    .fs--italic-xl,
-    .italic-xl {
-        font-style: italic;
+  .fs--normal-xl,
+  .normal-xl {
+    font-style: normal;
+  }
+
+  .fs--emphasis-xl,
+  .emphasis-xl {
+    font-weight: 700;
+
+    &-light {
+      font-weight: 500;
     }
 
-    .fs--normal-xl,
-    .normal-xl {
-        font-style: normal;
+    &-small-caps {
+      font-variant-caps: all-small-caps;
+      font-feature-settings: "kern";
+
+      /* for IE */
+      letter-spacing: 0.06em;
+      font-kerning: normal;
     }
-
-    .fs--emphasis-xl,
-    .emphasis-xl {
-
-        font-weight: 700;
-
-        &-light {
-            font-weight: 500;
-        }
-
-        &-small-caps {
-            font-variant-caps: all-small-caps;
-            font-feature-settings: 'kern';
-
-            /* for IE */
-            letter-spacing: 0.06em;
-            font-kerning: normal;
-
-        }
-    }
+  }
 }

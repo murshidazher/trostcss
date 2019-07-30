@@ -3,29 +3,28 @@
 */
 
 .whs {
+  &--normal {
+    white-space: normal;
+  }
 
-    &--normal {
-        white-space: normal;
-    }
+  &--nowrap {
+    white-space: nowrap;
+  }
 
-    &--nowrap {
-        white-space: nowrap;
-    }
+  &--prewrap {
+    white-space: pre-wrap;
+  }
 
-    &--pre {
-        white-space: pre;
-    }
-
-    &--prewrap {
-        white-space: pre-wrap;
-    }
-
-    &--preline {
-        white-space: pre-line;
-    }
+  &--preline {
+    white-space: pre-line;
+  }
 }
 
-@mixin atSmall {}
-@mixin atMedium {}
-@mixin atLarge {}
-@mixin atExLarge {}
+@mixin atSmall {
+}
+@mixin atMedium {
+}
+@mixin atLarge {
+}
+@mixin atExLarge {
+}
