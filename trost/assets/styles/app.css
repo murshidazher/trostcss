@@ -1,0 +1,24 @@
+.content {
+  margin-left: none;
+}
+
+@media (min-width: 960px) {
+  .content {
+    margin-left: 13rem;
+  }
+}
+
+.search {
+  background-color: #ffffff;
+  border-color: transparent;
+  color: #604bd8;
+  padding-right: 6rem;
+}
+
+.minihead {
+  width: 2rem;
+}
+
+.minihead::before {
+  content: "\2014 \00A0";
+}
