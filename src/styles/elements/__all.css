@@ -1,6 +1,3 @@
-@import "_typeface.css";
-@import "_typescale.css";
-@import "_switch.css";
 @import "_code.css";
 @import "_grid.css";
 @import "_blockquote.css";
@@ -12,3 +9,7 @@
 @import "_button-size.css";
 @import "_button-icon.css";
 @import "_button-group.css";
+@import "_spinner.css";
+
+@import "_input.css";
+@import "_input-sizes.css";

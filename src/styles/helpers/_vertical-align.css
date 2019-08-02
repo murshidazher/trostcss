@@ -10,90 +10,90 @@
         -xl : extra large
 */
 
-.v--base {
-    vertical-align: baseline;
+.v-baseline {
+  vertical-align: baseline;
 }
 
-.v--mid {
-    vertical-align: middle;
+.v-middle {
+  vertical-align: middle;
 }
 
-.v--top {
-    vertical-align: top;
+.v-top {
+  vertical-align: top;
 }
 
-.v--bottom {
-    vertical-align: bottom;
+.v-bottom {
+  vertical-align: bottom;
 }
 
 @mixin atSmall {
-    .v--base-sm {
-        vertical-align: baseline;
-    }
+  .v-baseline-sm {
+    vertical-align: baseline;
+  }
 
-    .v--mid-sm {
-        vertical-align: middle;
-    }
+  .v-middle-sm {
+    vertical-align: middle;
+  }
 
-    .v--top-sm {
-        vertical-align: top;
-    }
+  .v-top-sm {
+    vertical-align: top;
+  }
 
-    .v--bottom-sm {
-        vertical-align: bottom;
-    }
+  .v-bottom-sm {
+    vertical-align: bottom;
+  }
 }
 
 @mixin atMedium {
-    .v--base-md {
-        vertical-align: baseline;
-    }
+  .v-baseline-md {
+    vertical-align: baseline;
+  }
 
-    .v--mid-md {
-        vertical-align: middle;
-    }
+  .v-middle-md {
+    vertical-align: middle;
+  }
 
-    .v--top-md {
-        vertical-align: top;
-    }
+  .v-top-md {
+    vertical-align: top;
+  }
 
-    .v--bottom-md {
-        vertical-align: bottom;
-    }
+  .v-bottom-md {
+    vertical-align: bottom;
+  }
 }
 
 @mixin atLarge {
-    .v--base-lg {
-        vertical-align: baseline;
-    }
+  .v-baseline-lg {
+    vertical-align: baseline;
+  }
 
-    .v--mid-lg {
-        vertical-align: middle;
-    }
+  .v-middle-lg {
+    vertical-align: middle;
+  }
 
-    .v--top-lg {
-        vertical-align: top;
-    }
+  .v-top-lg {
+    vertical-align: top;
+  }
 
-    .v--bottom-lg {
-        vertical-align: bottom;
-    }
+  .v-bottom-lg {
+    vertical-align: bottom;
+  }
 }
 
 @mixin atExLarge {
-    .v--base-xl {
-        vertical-align: baseline;
-    }
+  .v-baseline-xl {
+    vertical-align: baseline;
+  }
 
-    .v--mid-xl {
-        vertical-align: middle;
-    }
+  .v-middle-xl {
+    vertical-align: middle;
+  }
 
-    .v--top-xl {
-        vertical-align: top;
-    }
+  .v-top-xl {
+    vertical-align: top;
+  }
 
-    .v--bottom-xl {
-        vertical-align: bottom;
-    }
+  .v-bottom-xl {
+    vertical-align: bottom;
+  }
 }
