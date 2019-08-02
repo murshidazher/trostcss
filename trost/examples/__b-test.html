@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Typescale</title>
+    <meta
+      name="keywords"
+      content="A modular, lightweight and responsive front-end framework for rapid prototyping and UI development."
+    />
+    <meta
+      name="description"
+      content="A modular, lightweight and responsive front-end framework for rapid prototyping and UI development."
+    />
+    <link rel="stylesheet" href="../assets/styles/trost.min.css" />
+    <link rel="stylesheet" href="../assets/styles/app.css" />
+    <style>
+      .active {
+        border: 1px solid red;
+        border-bottom: 0;
+        border-left: 0;
+        width: 40px;
+        height: 80px;
+        margin: 30px;
+        position: relative;
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+      }
+      .active:after,
+      .active:before {
+        content: "";
+        width: 40px;
+        height: 30px;
+        border: 1px solid red;
+        position: absolute;
+        bottom: -3px;
+        border-top: 0;
+      }
+      .active:after {
+        border-left: 0;
+        -moz-border-radius: 0 0 5px 0;
+        -webkit-border-radius: 0 0 5px 0;
+        right: -41px;
+      }
+      .active:before {
+        border-right: 0;
+        -moz-border-radius: 0 5px 0 5px;
+        -webkit-border-radius: 0 0 0 5px;
+        right: -41px;
+      }
+    </style>
+  </head>
+
+  <body class="font--sans clr--black-lightest">
+    <div class="active">hi</div>
+  </body>
+</html>
