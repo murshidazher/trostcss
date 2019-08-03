@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Word Break</title>
+  <meta name="keywords"
+    content="A modular, lightweight and responsive front-end framework for rapid prototyping and UI development." />
+  <meta name="description"
+    content="A modular, lightweight and responsive front-end framework for rapid prototyping and UI development." />
+  <link rel="stylesheet" href="../assets/styles/trost.min.css" />
+</head>
+
+<body class="font--sans clr--black-lightest">
+  <section class="row bg--white">
+    <aside class="col-3">
+      <div class="row sidebar pos--fixed w-25">
+        <section class="col-12 content ">
+          <div class="pa--hor-7 pa--ver-6 h-100 ">
+            <h1 class="f6 fw--bold tt--uppr ma--btm-1">Trostcss</h1>
+            <h1 class="f7 fw--semi-bold ls--breathe clr--silver-dark ma--btm-6">Version<span
+                class="bg--green-faded ma--lft-2 pa--hor-3 pa--ver-1 clr--green bdr-r1 ta--center">0.1.0</span></h1>
+            <div class="h1 bdr--top bdr--silver-dark ma--btm-6"></div>
+            <div class="ma--btm-5">
+              <h1 class="f7 tt--uppr ls--title-uppr ma--btm-3">Getting Started</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Usage</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Support</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Accessibility</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Contributors</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">License</h1>
+            </div>
+
+            <div class="ma--btm-5">
+              <h1 class="f7 tt--uppr ls--title-uppr ma--btm-3">Typography</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Typeface</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Typescale</h1>
+            </div>
+            <div class="ma--btm-5">
+              <h1 class="f7 tt--uppr ls--title-uppr ma--btm-3">Style</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Color Palette</h1>
+            </div>
+            <div class="ma--btm-5">
+              <h1 class="f7 tt--uppr ls--title-uppr ma--btm-3">Components</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Form Elements</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Buttons</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">UI Elements</h1>
+              <h1 class="f7 ma--lft-6 ls--breathe clr--silver-dark ma--btm-2">Tables</h1>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </aside>
+    <main class="col-9 bg--silver-lightest">
+      <div class="row ma--hor-7 ma--top-6">
+        <div class="col-12 ">
+          <div class="row ma--btm-4">
+            <div class=" col-12  bdr-r2 pa--ver-6 pa--hor-6  bg--white  flt--left">
+
+              <h1 class="f3 fw--bold ma--btm-3">Word Break</h1>
+              <p class="f6 fw--regular lh--lead ls--breathe chw--sans-48 ma--btm-5">
+                Defines how words should break when reaching the end of a line.<br>
+              </p>
+              <h1 class="ls--title-uppr tt--uppr fw--bold clr--gray ma--btm-4"><small>Syntax</small></h1>
+
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Normal</small></h1>
+              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
+                  Add <code class="pa--hor-4 pa--ver-2 bdr-r--pill clr--white fw--bold "
+                  style="background: #6D44DE;"><span class="pa--hor-1">wb--normal</span></code> class to have the default line break rules.
+              </p>
+
+              <div class="ma--btm-5">
+                  <p class="maxw-6 wb--normal lh--body whs--normal ma--btm-4">Lorem ipsum dolor sit amet
+                      consectetur, adipisicing elit. At sunt cumque amet saepe officia temporibus molestiae
+                      reiciendis ad quasi, blanditiis fugiat dicta pariatur nesciunt maxime maiores vitae
+                      doloremque rem ipsa.</p>
+              </div>
+
+              <pre class="code-snippet ma--btm-5">
+                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>wb--normal</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+              </pre>
+
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Break All</small></h1>
+              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
+                  Add <code class="pa--hor-4 pa--ver-2 bdr-r--pill clr--white fw--bold "
+                  style="background: #6D44DE;"><span class="pa--hor-1">wb--brkall</span></code> class if you want words to prevent overflow by breaking words.
+              </p>
+
+              <div class="ma--btm-5">
+                  <p class="maxw-6 wb--brkall lh--body whs--normal ma--btm-4">Lorem ipsum dolor sit amet
+                      consectetur, adipisicing elit. At sunt cumque amet saepe officia temporibus molestiae
+                      reiciendis ad quasi, blanditiis fugiat dicta pariatur nesciunt maxime maiores vitae
+                      doloremque rem ipsa.</p>
+              </div>
+
+              <pre class="code-snippet ma--btm-5">
+                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>wb--brkall</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+              </pre>
+
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Keep All</small></h1>
+              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
+                  Add <code class="pa--hor-4 pa--ver-2 bdr-r--pill clr--white fw--bold "
+                  style="background: #6D44DE;"><span class="pa--hor-1">wb--kpall</span></code> class if you want to keep the word structure.
+              </p>
+
+              <div class="ma--btm-5">
+                  <p class="maxw-6 wb--kpall lh--body whs--normal ma--btm-4">Lorem ipsum dolor sit amet
+                      consectetur, adipisicing elit. At sunt cumque amet saepe officia temporibus molestiae
+                      reiciendis ad quasi, blanditiis fugiat dicta pariatur nesciunt maxime maiores vitae
+                      doloremque rem ipsa.</p>
+              </div>
+
+              <pre class="code-snippet ma--btm-5">
+                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>wb--kpall</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+              </pre>
+
+              <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Break Word</small></h1>
+              <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+              <p class="fw--regular lh--body ls--compact chw--sans-wide ma--btm-5">
+                  Add <code class="pa--hor-4 pa--ver-2 bdr-r--pill clr--white fw--bold "
+                  style="background: #6D44DE;"><span class="pa--hor-1">wb--brkwrd</span></code> class if you want words to prevent overflow by breaking words in arbitary points.
+              </p>
+
+              <div class="ma--btm-5">
+                  <p class="maxw-6 wb--brkwrd lh--body whs--normal ma--btm-4">Lorem ipsum dolor sit amet
+                      consectetur, adipisicing elit. At sunt cumque amet saepe officia temporibus molestiae
+                      reiciendis ad quasi, blanditiis fugiat dicta pariatur nesciunt maxime maiores vitae
+                      doloremque rem ipsa.</p>
+              </div>
+
+              <pre class="code-snippet ma--btm-7">
+                  <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;p class=&quot;<span>wb--brkwrd</span>&quot;&gt;<br>&nbsp;&nbsp;lorem ipsum...<br>&lt;/p&gt;</code>
+              </pre>
+
+              
+            </div>
+          </div>
+
+          <div class="row bdr-r2 bg--white pa--hor-6 pa--ver-6  ma--btm-5">
+            <div class="col-5 col--align-center ">
+              <h1 class="f7 tt--uppr fw--semi-bold ls--breathe clr--silver-dark ma--btm-3">Compatability</h1>
+              <h1 class="f5 fw--bold ls--compact clr--gray"><span class="f4 clr--black">8.9</span> out of 10</h1>
+              <div class="row h1">
+                <div class="col-8 ">
+                  <div class="bg--green ma--rgt-1 h-25 bdr-r--pill ta--center"></div>
+                </div>
+                <div class="col-2">
+                  <div class="bg--gray h-25 bdr-r--pill ta--center"></div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <h1 class="f7 tt--uppr fw--semi-bold ls--breathe clr--silver-dark ma--btm-3">Max Specificity</h1>
+              <h1 class="f7 fw--semi-bold ls--breathe">Manufacturer</h1>
+            </div>
+
+
+            <div class="col-3">
+              <h1 class="f7 tt--uppr fw--semi-bold ls--breathe clr--silver-dark ma--btm-3">Source Files</h1>
+              <h1 class="f7 fw--semi-bold ls--breathe ">_elements/buttons.css</h1>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="pa--ver-5 bdr--top bdr--gray-light ma--btm-3">
+        <div class="row ma--btm-6">
+          <div class="col-12">
+            <p class="pa--hor-7 ta--left ls--stretch"><small><span class="fw--bold">TROSTCSS</span> v0.1.0<span
+                  class="fw--bold ma--lft-6 ma--rgt-6">GITHUB</span><span class="fw--bold ma--rgt-6">ISSUES</span><span
+                  class="fw--bold ma--rgt-6">RELEASE</span></small></p>
+          </div>
+
+        </div>
+
+        <div class="row ma--btm-3 pa--hor-7">
+          <div class="col-6">
+            <p class="ta--left ls--breathe ta--left"><small>
+                Source code licensed under <a href="https://github.com/murshidazher/trostcss/blob/master/LICENSE"><span
+                    class="fw--bold">MIT</span></a>,<br> Website content licensed under <a
+                  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><span class="fw--bold">CC
+                    BY-NC-SA 4.0</span></a></small></p>
+          </div>
+
+          <div class="col-6">
+            <p class="ta--right ls--breathe"><small>A project by <br> <a href="#"><span class="fw--bold">
+                    @murshidazher</span></a></small></p>
+          </div>
+        </div>
+
+
+      </footer>
+    </main>
+
+
+
+  </section>
+
+
+  <!-- <footer>
+        <p>Copyright &copy; Achelois. All rights reserved.</p>
+      </footer> -->
+
+
+  </div>
+  </div>
+</body>
+
+</html>
