@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Combined Shape Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="51.1745516%" fx="50%" fy="51.1745516%" r="44.5049508%" gradientTransform="translate(0.500000,0.511746),rotate(45.039783),scale(1.000000,0.998302),translate(-0.500000,-0.511746)" id="radialGradient-1">
+            <stop stop-color="#9680C5" offset="0%"></stop>
+            <stop stop-color="#8666B3" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Macbook-Air" transform="translate(-611.000000, -51.000000)" fill="url(#radialGradient-1)">
+            <path d="M651,131 C628.90861,131 611,113.09139 611,91 C611,68.90861 628.90861,51 651,51 C673.09139,51 691,68.90861 691,91 C691,113.09139 673.09139,131 651,131 Z M651.327869,115.262295 C664.546487,115.262295 675.262295,104.546487 675.262295,91.3278689 C675.262295,78.1092503 664.546487,67.3934426 651.327869,67.3934426 C638.10925,67.3934426 627.393443,78.1092503 627.393443,91.3278689 C627.393443,104.546487 638.10925,115.262295 651.327869,115.262295 Z" id="Combined-Shape-Copy-2"></path>
+        </g>
+    </g>
+</svg>

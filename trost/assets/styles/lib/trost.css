@@ -12354,7 +12354,7 @@ nav::-webkit-scrollbar-thumb:window-inactive {
   }
 
 .btn {
-  display: inline-block;
+  /* display: inline-block; */
   outline: none;
   overflow: hidden;
   -webkit-user-select: none;

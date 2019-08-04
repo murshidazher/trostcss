@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Typescale</title>
+    <meta
+      name="keywords"
+      content="A modular, lightweight and responsive front-end framework for rapid prototyping and UI development."
+    />
+    <meta
+      name="description"
+      content="A modular, lightweight and responsive front-end framework for rapid prototyping and UI development."
+    />
+    <link rel="stylesheet" href="../assets/styles/lib/trost.min.css" />
+    <link rel="stylesheet" href="../assets/styles/app.css" />
+    <script src="../assets/scripts/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body class="font--sans clr--black-lightest ">
+
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header  bg--silver-lightest" >
+        <div class="brand-wrapper">
+          <!-- Hamburger -->
+          <div class="row pa--lft-8-md pa--rgt-7 pa--rgt-4-xs pa--rgt-7-sm pa--rgt-8-md  pa--ver-4 pa--ver-6-md" style="    
+          align-items: center;
+          ">
+
+              <div class="col-1 dspy--none-md">
+                  <button type="button" class="navbar-toggle dspy--b dspy--none-md">
+                      <span class="sr-only">Toggle</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+              </div>
+              <div class="col-6 col-6-xs col-6-sm col-7-md col-6-lg">
+              
+                  <div class="field">
+                      <div class="input-group input-group--with-icon icon-left">
+    
+                        <input class="search form-control maxw-8 clr--red" type="text" placeholder="Search for a component">
+    
+                        <svg style="background:url(../assets/images/icons/search.svg) no-repeat;width: 21px;height: 21px;padding-left: 24px;padding-bottom: 6px;filter: invert(78%) sepia(41%) saturate(1545%) hue-rotate(357deg) brightness(100%) contrast(106%);"></svg>
+    
+                        <div class="dspy--ib pos--relative">
+                          <span class="dspy--ib f7 clr--black" style="-webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        position: absolute;
+                        z-index: 3;
+                        top: 50%;
+                        /* margin: .25em 0; */
+                        padding: .25rem .5rem;
+                        border-radius: .25em;
+                        background-color: #FFCA00; 
+                        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.02);    right: .6rem;     width: 5rem;">Shortcut /</span>
+                        </div>
+                        
+                      </div>
+                    </div>
+              </div>
+              <div class="col-5 col-6-xs col-5-sm col-5-md col-6-lg dspy--f flt--right ta--right v-middle ">
+                  
+                  <button class="btn  btn--xs btn--sm-md btn--pill dspy--ib-md " style="background-color: #131313; border: none;"> 
+                      <span class="fw--bold tt--uppr ls--heave clr--white ">Github</span>
+                    </button>
+                    <button class="btn btn--xs btn--sm-md  btn--pill tt--uppr ma--lft-2 dspy--ib " style="background-color: #FFCA00;    border: none;"> 
+                        <span class="fw--bold ls--heave clr--silver-lightest" style="color: #131313;">Sponsor</span>
+                      </button>
+    
+                      
+              </div>
+            
+          </div>
+          
+
+        
+        
+        </div>
+      </div>
+
+    <div class="side-menu bg--white">
+      <nav class="navbar navbar-default" role="navigation">
+       
+
+        <!-- Main Menu -->
+        <div class="side-menu-container">
+          <div class="nav navbar-nav z9999">
+
+            <!-- Brand -->
+            <div class="brand-name-wrapper">
+                <div class="pa--hor-6 pa--ver-6 ta--center bg--white" style=" padding-bottom: 6px;">
+                    <a class="navbar-brand" href="#">
+                        <svg class=" ma--btm-1 logo" shape-rendering="geometricPrecision" style="background:url(../assets/images/logo_yellow.svg) no-repeat;     width: 80px;  height: 80px;">
+                      
+                        </svg>
+                      </a>
+      
+                    <h1 class="f7 fw--semi-bold ls--breathe clr--silver-dark tt--uppr ma--btm-6 ma--top-4">Version<span class="bg--green-faded ma--lft-2 pa--hor-3 pa--ver-1 clr--green bdr-r1 ta--center">0.1.0</span></h1>
+                  </div>
+              </div>
+
+              <div class="ma--btm-6">
+                  <h1 class="f6 pa--btm-2 ma--btm-2 bdr--left bdr-w4 pa--ver-2 pa--lft-4 " style="border-color: #FFCA00;"><small>Getting Started</small></h1>
+                  <h1 class="f7 ls--breathe ma--lft-7 ma--btm-4 fw--semi-bold">Usage</h1>
+                  <h1 class="f7 ls--breathe ma--lft-7 ma--btm-4">Support</h1>
+                  <h1 class="f7 ls--breathe ma--lft-7 ma--btm-4">Accessibility</h1>
+                  <h1 class="f7 ls--breathe ma--lft-7 ma--btm-4">Contributors</h1>
+                  <h1 class="f7 ls--breathe ma--lft-7">License</h1>
+                </div>
+    
+                <div class="ma--btm-5">
+                  <h1 class="f6 pa--lft-4" style="color: #676767;"><small>Color</small></h1>
+                </div>
+    
+                <div class="ma--btm-5">
+                    <h1 class="f6 pa--lft-4" style="color: #676767;"><small>Base</small></h1>
+                </div>
+    
+                <div class="ma--btm-5">
+                    <h1 class="f6 pa--lft-4" style="color: #676767;"><small>Typography</small></h1>
+                </div>
+                <div class="ma--btm-5">
+                    <h1 class="f6 pa--lft-4" style="color: #676767;"><small>Element</small></h1>
+                </div>
+    
+                <div class="ma--btm-5">
+                    <h1 class="f6 pa--lft-4" style="color: #676767;"><small>Form</small></h1>
+                </div>
+    
+                <div class="ma--btm-5">
+                    <h1 class="f6 pa--lft-4" style="color: #676767;"><small>Utitlity</small></h1>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid pa--top-6 " style="background-color: #F7F7F7;">
+      <div class="side-body" >
+          <div class="row ma--hor-7 ma--btm-7 " >
+              <div class="col-12">
+                
+                  <div class=" f7 ls--breathe tt--uppr fw--bold clr--gray-darker pa--rgt-1 ma--btm-4" style="
+                    
+                  ">Typography <span></span>Type Scale</div>
+              </div>
+            <div class="col-12 bdr-r3 pa--ver-7 pa--hor-8 flt--left bg--white">
+              <div class="row ">
+                <div class=" col-9 " style="    width: 80em;">
+                  <div class="row ma--btm-6">
+    
+                    <div class="col-6">
+                        <div class="" style="
+                        /* display: flex; */
+                        /* flex-direction: row; */
+                        /* align-items: center; */
+                        position: relative;
+                     ">
+                                <span style="background:url(../assets/images/icons/check-circle.svg) no-repeat;/* display: inline-block; */width: 24px;height: 24px;/* left:50px; */padding-left: 32px;padding-bottom: 6px;/* position: relative; */object-fit: #ff0b0b;/* filter: invert(26%) sepia(47%) saturate(1985%) hue-rotate(202deg) brightness(88%) contrast(74%); */filter: invert(99%) sepia(80%) saturate(2515%) hue-rotate(73deg) brightness(98%) contrast(92%);"></span> <div class=" f7 ls--breathe tt--uppr fw--bold clr--gray pa--rgt-1 ma--btm-4" style="
+                        display: inline;
+                        /* margin: 0 auto; */
+                        /* position: absolute; */
+                        position: absolute;
+                        top: 50%;
+                        /* left: 50%; */
+                        /* -webkit-transform: translate(-50%, -50%); */
+                        height: 12px;
+                        transform: translate(0%, -50%);
+                     ">Up-to-date</div>
+                    </div>
+                    </div>
+                  </div>
+                    
+                
+                  <h1 class="f5 fw--bold ma--btm-3">Type Scale</h1>
+                  <p class="f5 fw--regular ls--breathe chw--sans-48 ma--btm-5 clr--silver-dark" >
+                    <small>Harmoniously proportioned sizes for all standard typographic elements.</small><br>
+                  </p>
+                  <h1 class="ls--title-uppr tt--uppr fw--bold clr--gray ma--btm-4"><small>Hierarchy</small></h1>
+    
+                  <h1 class="f6 ls--title-uppr fw--semi-bold pa--btm-2"><small>Examples</small></h1>
+                  <div class="h1 bdr--top bdr--gray-lighter ma--btm-3"></div>
+    
+                  <div class="ma--btm-6">
+                    <h1 class="f-head lh--head ma--btm-1">The quick brown fox</h1>
+                    <h1 class="f-subhead ma--btm-1">The quick brown fox</h1>
+                    <h1 class="f1 ma--btm-1">The quick brown fox</h1>
+                    <h1 class="f2 ma--btm-1">The quick brown fox</h1>
+                    <h1 class="f3 ma--btm-1">The quick brown fox</h1>
+                    <h1 class="f4 ma--btm-1">The quick brown fox</h1>
+                    <h1 class="f5 ma--btm-2">The quick brown fox</h1>
+                    <h1 class="f6 ma--btm-3">The quick brown fox</h1>
+                    <h1 class="f7 ma--btm-1">The quick brown fox</h1>
+                  </div>
+    
+                  <pre class="code-snippet ma--btm-7">
+                        <code rel='HTML' class="bdr-r2 bg--silver-lightest">&lt;h1 class=&quot;<span>f-head</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f-subhead</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f1</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f2</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f3</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f4</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f5</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f6</span>&quot;&gt;...&lt;/h1&gt;<br>&lt;h1 class=&quot;<span>f7</span>&quot;&gt;...&lt;/h1&gt;</code>
+                    </pre>
+    
+                  
+    
+                 
+    
+                  
+    
+    
+                </div>
+                <div class="col-3 dspy--none dspy--b-lg">
+               
+                    <section class="row  row--fluid row--no-wrap ">
+                        <aside class="pos--relative dspy--ib">
+                          <div class="row sidebar pos--fixed z9999" style="
+                        ">
+                            <section class="col-12 bdr-r3  content " style="    width: 24rem;
+                            padding-right: 6em;">
+                              <div class="pa--hor-5 pa--ver-5 h-100 dspy--f flt--right">
+                                
+                                <div class="ma--btm-5">
+                                  <h1 class="f7 clr--silver-dark ma--btm-4">Type Scale</h1>
+                                  <h1 class="f7 ls--breathe pa--lft-4 ma--btm-4 bdr--left bdr-w3">Hierarchy</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Title</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Head</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Subtitle</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">One</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Two</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Three</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Four</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Five</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Six</h1>
+                                  <h1 class="f7 ls--breathe ma--lft-4 ma--btm-4 pa--lft-4">Seven</h1>
+                                </div>
+                    
+                              </div>
+                            </section>
+                          </div>
+                    
+                        </aside>
+                </div>
+              </div>
+    
+              
+    
+              
+              
+            </div>
+    
+            <div class="col-12 ">
+              <div class="row bdr-r3 bg--white pa--hor-6 pa--ver-6  ma--btm-5 ma--top-4 ">
+                <div class="col-5 col--align-center ">
+                  <h1 class="f7 tt--uppr fw--semi-bold ls--breathe clr--silver-dark ma--btm-3">Compatability</h1>
+                  <h1 class="f5 fw--bold ls--compact clr--gray"><span class="f4 clr--black">8.9</span> out of 10</h1>
+                  <div class="row h1">
+                    <div class="col-8 ">
+                      <div class="bg--green ma--rgt-1 h-25 bdr-r--pill ta--center"></div>
+                    </div>
+                    <div class="col-2">
+                      <div class="bg--gray h-25 bdr-r--pill ta--center"></div>
+                    </div>
+      
+                  </div>
+      
+                </div>
+                <div class="col-4">
+                  <h1 class="f7 tt--uppr fw--semi-bold ls--breathe clr--silver-dark ma--btm-3">Max Specificity</h1>
+                  <h1 class="f7 fw--semi-bold ls--breathe">Manufacturer</h1>
+                </div>
+      
+      
+                <div class="col-3">
+                  <h1 class="f7 tt--uppr fw--semi-bold ls--breathe clr--silver-dark ma--btm-3">Source Files</h1>
+                  <h1 class="f7 fw--semi-bold ls--breathe ">_elements/buttons.css</h1>
+                </div>
+      
+              </div>
+      
+            </div>
+            
+            
+          </div>
+    
+          <footer class="pa--ver-5  clr--black-lightest maxw-none w-100 pa--hor-7 bg--white" style="background-image: linear-gradient(180deg, #F7F7F7 0%, #FFFFFF 72%);">
+            <div class="row ma--btm-5  ">
+              <div class="col-12 bdr--dashed bdr--top bdr-w2 bdr-w--b0 bdr-w--l0 bdr-w--r0 pa--btm-6 "></div>
+              <div class="col-12 pa--btm-2 ">
+                <p class="ta--left ls--stretch"><small><span class="fw--bold">TROSTCSS</span> <span class="ls--compact">v0.1.0</span><a
+                  href="#" class="fw--bold ma--lft-6 ma--rgt-6">GITHUB</a><a href="#" class="fw--bold ma--rgt-6">ISSUES</a><a
+                      href="#" class="fw--bold ma--rgt-6">RELEASE</a></small></p>
+              </div>
+    
+            </div>
+    
+            
+    
+            <div class="row ma--btm-1">
+              <div class="col-6">
+                <p class="ta--left ls--breathe lh--lead ta--left"><small>
+                    Source code licensed under <a href="https://github.com/murshidazher/trostcss/blob/master/LICENSE"><span
+                        class="fw--bold">MIT</span></a>,<br> Website content licensed under <a
+                      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><span class="fw--bold">CC
+                        BY-NC-SA 4.0</span></a></small></p>
+              </div>
+    
+              
+    
+              
+    
+              <div class="col-6">
+                <p class="ta--right ls--breathe"><small>A project by <br> <a href="#"><span class="fw--bold">
+                        @murshidazher</span></a></small></p>
+              </div>
+            </div>
+    
+    
+          </footer>
+      </div>
+    </div>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      $(function() {
+        $(".navbar-toggle").click(function() {
+          $(".navbar-header").toggleClass("push-in");
+          $(".navbar-nav").toggleClass("slide-in");
+          $(".side-body").toggleClass("body-slide-in");
+          $("#search")
+            .removeClass("in")
+            .addClass("collapse")
+            .slideUp(200);
+
+          /// uncomment code for absolute positioning tweek see top comment in css
+          //$('.absolute-wrapper').toggleClass('slide-in');
+        });
+
+        // Remove menu for searching
+        $("#search-trigger").click(function() {
+          $(".navbar-nav").removeClass("slide-in");
+          $(".side-body").removeClass("body-slide-in");
+          // $(".navbar-header").toggleClass("push-in");
+          /// uncomment code for absolute positioning tweek see top comment in css
+          //$('.absolute-wrapper').removeClass('slide-in');
+        });
+      });
+    </script>
+  </body>
+</html>

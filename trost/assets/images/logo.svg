@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+<svg  viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
     <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -10,8 +10,8 @@
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Macbook-Air" transform="translate(-545.000000, -246.000000)" fill="url(#linearGradient-1)">
-            <path d="M585,326 C562.90861,326 545,308.09139 545,286 C545,263.90861 562.90861,246 585,246 C607.09139,246 625,263.90861 625,286 C625,308.09139 607.09139,326 585,326 Z M585,310.411765 C598.482245,310.411765 609.411765,299.482245 609.411765,286 C609.411765,272.517755 598.482245,261.588235 585,261.588235 C571.517755,261.588235 560.588235,272.517755 560.588235,286 C560.588235,299.482245 571.517755,310.411765 585,310.411765 Z" id="Combined-Shape"></path>
+        <g id="Macbook-Air" transform="translate(-529.000000, -246.000000)" fill="url(#linearGradient-1)">
+            <path d="M569,326 C546.90861,326 529,308.09139 529,286 C529,263.90861 546.90861,246 569,246 C591.09139,246 609,263.90861 609,286 C609,308.09139 591.09139,326 569,326 Z M569.327869,310.262295 C582.546487,310.262295 593.262295,299.546487 593.262295,286.327869 C593.262295,273.10925 582.546487,262.393443 569.327869,262.393443 C556.10925,262.393443 545.393443,273.10925 545.393443,286.327869 C545.393443,299.546487 556.10925,310.262295 569.327869,310.262295 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>
