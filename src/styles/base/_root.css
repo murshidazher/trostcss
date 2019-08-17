@@ -1,83 +1,78 @@
-/* Root styles for Achelois */
+/* Root styles for Trost */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    /* color: $header-color; */
+  /* color: $header-color; */
 }
 
 iframe,
 fieldset {
-    outline: 0;
-    /* border: 2px solid rgba(0, 0, 0, 0.1); */
+  outline: 0;
+  /* border: 2px solid rgba(0, 0, 0, 0.1); */
 }
 
 /* Reset ul, ol, dl */
 
 ul {
-    
-    list-style-type: disc;
+  list-style-type: disc;
 }
-  
+
 ol {
-    list-style-type: decimal;
+  list-style-type: decimal;
 }
 
 /* Reset Quotes */
 q {
-    quotes: '“' '”' '‘' '’';
+  quotes: "“" "”" "‘" "’";
 
-    /* Legacy support */
-    &:before {
-        content: '“'; 
-        content: open-quote;
-    }
+  /* Legacy support */
+  &:before {
+    content: "“";
+    content: open-quote;
+  }
 
-    &:after {
-        content: '”'; 
-        content: close-quote;
-    }
+  &:after {
+    content: "”";
+    content: close-quote;
+  }
 
-    & q:before {
-        content: '‘'; 
-        content: open-quote;
-    }
+  & q:before {
+    content: "‘";
+    content: open-quote;
+  }
 
-    & q:after {
-        content: '’'; 
-        content: close-quote;
-    }
+  & q:after {
+    content: "’";
+    content: close-quote;
+  }
 }
 
 blockquote {
+  /* q in blockquote */
+  & q:before {
+    content: "‘";
+    content: open-quote;
+  }
 
-    /* q in blockquote */
-    & q:before {
-        content: '‘'; 
-        content: open-quote;
-    }
+  & q:after {
+    content: "’";
+    content: close-quote;
+  }
 
-    & q:after {
-        content: '’'; 
-        content: close-quote;
-    }
+  & q q:before {
+    content: "“";
+    content: open-quote;
+  }
 
-    & q q:before {
-        content: '“'; 
-        content: open-quote;
-    }
-
-    & q q:after {
-        content: '”'; 
-        content: close-quote;
-    }
+  & q q:after {
+    content: "”";
+    content: close-quote;
+  }
 }
 
 :-moz-focusring {
-    /* outline: 1px dotted color; */
+  /* outline: 1px dotted color; */
 }
-
-
-
