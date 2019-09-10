@@ -3,13 +3,13 @@
 @import "_blockquote.css";
 @import "_keystroke.css";
 @import "_button.css";
-@import "_button-type.css";
+/* @import "_button-type.css"; */
 @import "_button-colors.css";
 @import "_button-style.css";
 @import "_button-size.css";
 @import "_button-icon.css";
 @import "_button-group.css";
-@import "_spinner.css";
+/* @import "_spinner.css"; */
 
 @import "_input.css";
-@import "_input-sizes.css";
+/* @import "_input-sizes.css"; */
