@@ -1,6 +1,6 @@
-/* 
+/*
 * Color scheme based on [Trost's v1.0 design system]
-* (http://) 
+* (http://)
 */
 
 /* Background colors */
@@ -451,7 +451,7 @@
     &--beige-light {
         background-color: var(--beige-light);
     }
-    
+
 
     /* Silver */
 
@@ -981,7 +981,7 @@
     &--beige-light {
         border-color: var(--beige-light);
     }
-    
+
 
     /* Silver */
 
@@ -1514,7 +1514,7 @@
     &--beige-light {
         color: var(--beige-light);
     }
-    
+
 
     /* Silver */
 
@@ -1612,53 +1612,53 @@
             ::selection {
                 background: var(--red-faded);
             }
-        } 
-    }  
-    
+        }
+    }
+
     &--green{
         ::selection {
             background: var(--green-faded);
         }
-        
-    } 
+
+    }
 
     &--blue::selection {
         background: var(--blue-faded);
-    } 
+    }
 
     &--gold::selection {
         background: var(--gold-faded);
-    } 
+    }
 
     &--brown::selection {
         background: var(--brown-lightest);
-    } 
+    }
 
     &--sepia::selection {
         background: var(--sepia-lightest);
-    } 
+    }
 
     &--orange::selection {
         background: var(--orange-lightest);
-    } 
+    }
 
     &--yellow::selection {
-        background: var(--ywllow-lightest);
-    } 
+        background: var(--yellow-lightest);
+    }
 
     &--violet::selection {
         background: var(--violet-lighter);
-    } 
+    }
 
     &--purple::selection {
         background: var(--purple-lightest);
     }
-    
+
     &--gray::selection {
         background: var(--gray-lightest);
-    } 
+    }
 
     &--silver::selection {
         background: var(--silver-lightest);
-    } 
+    }
 }
