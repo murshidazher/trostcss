@@ -27,4 +27,4 @@ how it looks in sass
 
 ## License
 
-2020 Murshid Azher
+[MIT](https://github.com/murshidazher/trostcss/blob/master/LICENSE) © Murshid Azher.
