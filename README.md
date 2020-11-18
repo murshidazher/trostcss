@@ -26,6 +26,10 @@ how it looks in sass
 }
 ```
 
+## Technology
+
+
+## Links
 
 ## License
 
