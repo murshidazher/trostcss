@@ -28,6 +28,8 @@ how it looks in sass
 
 ## Technology
 
+- `gulp`
+- `travis`
 
 ## Links
 
