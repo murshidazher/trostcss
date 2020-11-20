@@ -30,6 +30,7 @@ how it looks in sass
 
 - `gulp`
 - `travis`
+- `babel`
 
 ## Links
 
