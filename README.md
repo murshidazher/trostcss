@@ -4,7 +4,7 @@
 
 > Modern CSS framework
 
-- Some description
+- A utility-first css framework for rapid prototyping
 
 ```
 how it looks in the css class
